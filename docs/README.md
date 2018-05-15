@@ -23,7 +23,7 @@ The standard will be applied to bio.tool as follows:
 * "BASIC DETAILS" : level at which an entry becomes visible (by default).  Entry visibility will be settable by the user with an option to "Show more results" (*i.e.* over invisible entries)
 
 
-.. image:: images/information_standard.png
+![information standard](images/information_standard.png)
 
 # Why is a standard needed at all?
 
@@ -40,11 +40,12 @@ There are several reasons why a community-defined standard for tool information 
    
 # Description of attributes
 
-Attributes defined as mandatory in the latest stable schema (`biotools-2.0.0 <https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0>`_) are those in the "OKAY" tier plus  "Scientific operation" from the "GOOD" tier.
+Attributes defined as mandatory in the latest stable schema [biotools-2.0.0](https://github.com/bio-tools/biotoolsSchema/tree/master/versions/biotools-2.0.0) are those in the "OKAY" tier plus  "Scientific operation" from the "GOOD" tier.
 
 ## General attributes
 
    Attribute                       | Description                                                                                  | Format                               | element
+   --------------------------------|----------------------------------------------------------------------------------------------|--------------------------------------|--------
 	    
    **Name**                        | Canonical software name assigned by the software developer or service provider               | Text                                 | ``<name>``
    **Description**                 | Short and concise textual description of the software function                               | Text                                 | ``<description>``
@@ -52,7 +53,7 @@ Attributes defined as mandatory in the latest stable schema (`biotools-2.0.0 <ht
    **Unique ID**                   | Unique ID of the tool that is assigned upon registration of the software in bio.tools        | Text (URL-safe version of tool name) | ``<toolID>``
    **Tool type**                   | The type of application software: a discrete software entity can have more than one type.    | enum (from biotoolsSchema, see below) | ``<toolType>``
    **Scientific topics**           | General scientific domain the software serves or other general category, *e.g.* 'Proteomics' | Term and / or URI of `EDAM Topic <http://edamontology.org/topic_0004>`_ concept(s) (1) | ``<topic>``
-   **Publications**                | Publications about the software | DOI, PMID or PMCID | ``<publication>``
+   **Publications**                | Publications about the software                                                              | DOI, PMID or PMCID                   | ``<publication>``
    **Scientific operations**       | The basic operation(s) performed by the software, *e.g.* 'Multiple sequence alignment'       | Term and / or URI of `EDAM Operation <http://edamontology.org/operation_0004>`_ concept(s) | ``<function><operation>``
    **Operating system**            | The operating system supported by a downloadable software package.                           | enum (from biotoolsSchema) | ``<labels><OperatingSystem>``
    **Language**                    | Name of programming language the software source code was written in, *e.g.* 'C'.            | enum (from biotoolsSchema) | ``<language>``
