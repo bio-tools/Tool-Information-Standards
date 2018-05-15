@@ -1,4 +1,4 @@
-# Tool-Information-Standard
+# Tool Information Standard
 An information standard for the description of bioinformatics software tools.
 
 **The standard described below represents a "respectable beta" and will be implemented in https://bio.tools.**  Please join the `discussion on GitHub <https://github.com/bio-tools/biotoolsSchema/issues/77>`_
