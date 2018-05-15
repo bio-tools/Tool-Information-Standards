@@ -45,20 +45,21 @@ Attributes defined as mandatory in the latest stable schema [biotools-2.0.0](htt
 ## General attributes
 
    Attribute                       | Description                                                                                  | Format                               | element
+   
    ------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------ | -------
    **Name**                        | Canonical software name assigned by the software developer or service provider               | Text                                 | ``<name>``
    **Description**                 | Short and concise textual description of the software function                               | Text                                 | ``<description>``
    **Homepage**                    | Homepage of the software, or some URL that best serves this purpose                          | URL                                  | ``<homepage>``
    **Unique ID**                   | Unique ID of the tool that is assigned upon registration of the software in bio.tools        | Text (URL-safe version of tool name) | ``<toolID>``
    **Tool type**                   | The type of application software: a discrete software entity can have more than one type.    | enum (from biotoolsSchema, see below) | ``<toolType>``
-   **Scientific topics**           | General scientific domain the software serves or other general category, *e.g.* 'Proteomics' | Term and / or URI of `EDAM Topic <http://edamontology.org/topic_0004>`_ concept(s) (1) | ``<topic>``
+   **Scientific topics**           | General scientific domain the software serves or other general category, *e.g.* 'Proteomics' | Term and / or URI of [EDAM Topic] (http://edamontology.org/topic_0004) concept(s) (1) | ``<topic>``
    **Publications**                | Publications about the software                                                              | DOI, PMID or PMCID                   | ``<publication>``
-   **Scientific operations**       | The basic operation(s) performed by the software, *e.g.* 'Multiple sequence alignment'       | Term and / or URI of `EDAM Operation <http://edamontology.org/operation_0004>`_ concept(s) | ``<function><operation>``
+   **Scientific operations**       | The basic operation(s) performed by the software, *e.g.* 'Multiple sequence alignment'       | Term and / or URI of [EDAM Operation](http://edamontology.org/operation_0004>) concept(s) | ``<function><operation>``
    **Operating system**            | The operating system supported by a downloadable software package.                           | enum (from biotoolsSchema) | ``<labels><OperatingSystem>``
    **Language**                    | Name of programming language the software source code was written in, *e.g.* 'C'.            | enum (from biotoolsSchema) | ``<language>``
    **License**                     | Software or data usage license                                                               | enum (from biotoolsSchema) | ``<labels><license>``
-   **Type of input & output data** | Type of primary input / output data (if any), *e.g.* 'Protein sequences'                     | Term and / or URI of `EDAM Data <http://edamontology.org/data_0006>`_ concept(s) | ``<function><input>/<output><data>``
-   **Supported data formats**      | Allowed format(s) of primary inputs/outputs, *e.g.* 'FASTA'                                  | Term and / or URI of `EDAM Format <http://edamontology.org/format_1915>`_ concept(s) | ``<function><input>/<output><format>``
+   **Type of input & output data** | Type of primary input / output data (if any), *e.g.* 'Protein sequences'                     | Term and / or URI of [EDAM Data](http://edamontology.org/data_0006) concept(s) | ``<function><input>/<output><data>``
+   **Supported data formats**      | Allowed format(s) of primary inputs/outputs, *e.g.* 'FASTA'                                  | Term and / or URI of [EDAM Format](http://edamontology.org/format_1915) concept(s) | ``<function><input>/<output><format>``
     **Scientific benchmark**       | Scientific benchmarking results.                                                             | Link | ``<link><type>Scientific benchmark</type>``
     **Technical monitoring**       | Technical monitoring results.                                                                | Link | ``<link><type>Technical monitoring</type>``
 
@@ -67,6 +68,7 @@ Attributes defined as mandatory in the latest stable schema [biotools-2.0.0](htt
 ## "Documentation" group
 
    Attribute | Description | Format | element
+   
    --------- | ----------- | ------ | -------
    **General documentation** | General documentation                   | URL | ``<documentation><type>General</type>``
    **Manual**                | Information on how to use the software. | URL | ``<documentation><type>Manual</type>
@@ -76,6 +78,7 @@ Attributes defined as mandatory in the latest stable schema [biotools-2.0.0](htt
 ## "Code availability" group
 
    Attribute | Description | Format | element
+   
    --------- | ----------- | ------ | -------
    **Repository** | Link to repository where source code, data and other files may be downloaded | URL | ``<link><type>Repository</type>``
    **Source code** | Software source code. | URL | ``<download><type>Source code</type>``
@@ -85,6 +88,7 @@ Attributes defined as mandatory in the latest stable schema [biotools-2.0.0](htt
 
 
    Attribute | Description | Format | element
+   
    --------- | ----------- | ------ | -------
    **Terms of use** | Rules that one must agree to abide by in order to use a service. | URL | ``<link><type>Terms of use</type>``
    **Accessibility** | Whether the software is freely available for use. | enum (from biotoolsSchema) | ``<labels><Accessibility>``
@@ -93,6 +97,7 @@ Attributes defined as mandatory in the latest stable schema [biotools-2.0.0](htt
 ## "Support" group
 
    Attribute | Description | Format | element
+   
    --------- | ----------- | ------ | -------
    **Helpdesk** | Helpdesk providing support in using the software. | URL | ``<link><type>Helpdesk</type>``
    **Issue tracker** | Link to tracker for software issues, bug reports, feature requests etc. | URL | ``<link><type>Issue tracker</type>``
@@ -103,6 +108,7 @@ Attributes defined as mandatory in the latest stable schema [biotools-2.0.0](htt
 ## "Downloads" group
 
    Attribute | Description | Format | element
+   
    --------- | ----------- | ------ | -------
    **Biological data | Biological data, or a web page on a database portal where such data may be downloaded. | URL | ``<download><type>Biological data</type>``
    **Binaries** | Binaries for the software. | URL | ``<download><type>Binaries</type>``
