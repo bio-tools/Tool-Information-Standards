@@ -52,7 +52,7 @@ Attributes defined as mandatory in the latest stable schema [biotools-2.0.0](htt
    **Homepage**                    | Homepage of the software, or some URL that best serves this purpose                          | URL                                  | ``<homepage>``
    **Unique ID**                   | Unique ID of the tool that is assigned upon registration of the software in bio.tools        | Text (URL-safe version of tool name) | ``<toolID>``
    **Tool type**                   | The type of application software: a discrete software entity can have more than one type.    | enum (from biotoolsSchema, see below) | ``<toolType>``
-   **Scientific topics**           | General scientific domain the software serves or other general category, *e.g.* 'Proteomics' | Term and / or URI of [EDAM Topic] (http://edamontology.org/topic_0004) concept(s) (1) | ``<topic>``
+   **Scientific topics**           | General scientific domain the software serves or other general category, *e.g.* 'Proteomics' | Term and / or URI of [EDAM Topic](http://edamontology.org/topic_0004) concept(s) (1) | ``<topic>``
    **Publications**                | Publications about the software                                                              | DOI, PMID or PMCID                   | ``<publication>``
    **Scientific operations**       | The basic operation(s) performed by the software, *e.g.* 'Multiple sequence alignment'       | Term and / or URI of [EDAM Operation](http://edamontology.org/operation_0004>) concept(s) | ``<function><operation>``
    **Operating system**            | The operating system supported by a downloadable software package.                           | enum (from biotoolsSchema) | ``<labels><OperatingSystem>``
