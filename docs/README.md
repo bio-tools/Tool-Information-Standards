@@ -71,7 +71,7 @@ Attributes defined as mandatory in the latest stable schema [biotools-2.0.0](htt
    
    --------- | ----------- | ------ | -------
    **General documentation** | General documentation                   | URL | ``<documentation><type>General</type>``
-   **Manual**                | Information on how to use the software. | URL | ``<documentation><type>Manual</type>
+   **Manual**                | Information on how to use the software. | URL | ``<documentation><type>Manual</type>``
    **API documentation**     | Human-readable API documentation.       | URL | ``<documentation><type>API documentation</type>``
    **API specification**     | File providing an API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file. | URL | ``<download><type>API specification</type>``
 
