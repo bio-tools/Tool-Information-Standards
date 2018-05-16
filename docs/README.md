@@ -1,6 +1,6 @@
 *The standard described below represents a "respectable beta" and will be implemented in https://bio.tools.*  Please join the discussion on [GitHub](https://github.com/bio-tools/biotoolsSchema/issues/77)
 
-[biotoolsSchema](https://github.com/bio-tools/biotoolsSchema) provides the foundation for an **information standard** for the description of tools that is being adopted by https://bio.tools.  The standard has two components:
+[biotoolsSchema](https://github.com/bio-tools/biotoolsSchema) and the [EDAM ontology](https://github.com/edamontology/edamontology) provide the foundation for an **information standard** for the description of tools that is being adopted by https://bio.tools.  The standard has two components:
 
 * a list of tool attributes (see Table below) that must be specified (or stated as not being available) for an entry to be assigned in a 5 tier ratings of entry completeness and quality.  Some attributes are grouped (see tables on right) for purposes of determining adherance to the standard.
 * a set of [Curation Guidelines](http://biotools.readthedocs.io/en/latest/curators_guide.html) describing *how* each attribute should be specified, *i.e.* concerning the *quality* of an entry.  The guidelines go beyond the syntactic and semantic constraints defined by [biotoolsSchema](https://github.com/bio-tools/biotoolsSchema)`_.
@@ -122,4 +122,5 @@ Attributes defined as mandatory in the latest stable schema [biotools-2.0.0](htt
    **Tool wrapper (other)** | Workbench configuration file (other than taverna, galaxy or CWL wrapper) for the software. | URL | ``<download><type>Tool wrapper (other)</type>``
 
   
-.. note:: (1) EDAM is a simple ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM provides a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use.  You can find `EDAM on GitHub <https://github.com/edamontology/edamontology>`_.
+
+note:: EDAM is a simple ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM provides a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use.  You can find [EDAM on GitHub](https://github.com/edamontology/edamontology).
