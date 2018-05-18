@@ -16,7 +16,7 @@
 lang: en-GB
 title: Tool Information Standard
 email: jison@bioinformatics.dtu.dk
-description: An **information standard** for the desription of bioinformatics software tools.
+description: "An **information standard** for the desription of bioinformatics software tools."
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: https://bio-tools.github.io/Tool-Information-Standard/
 author:
