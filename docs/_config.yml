@@ -25,7 +25,7 @@ author:
   picture:
 twitter_username:
 github_username: joncison
-logo: /assets/icons/ToolInfoStandardLogo.png
+logo: /assets/icons/ToolInfoStandardLogo.svg
 search: true
 search_full_content: true
 search_provider: # lunr (default), algolia
