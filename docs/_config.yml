@@ -13,18 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-lang: en-US
+lang: en-GB
 title: Tool Information Standard
 email: jison@bioinformatics.dtu.dk
 description: An **information standard** for the desription of bioinformatics software tools.
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: https://bio-tools.github.io/Tool-Information-Standard/
 author:
   name: Jon Ison
   twitter:
   picture:
 twitter_username:
-github_username: joncison
+github_username: # joncison - this links to me, not really appropriate
 logo: /assets/icons/ToolInfoStandardLogo.svg
 search: true
 search_full_content: true
