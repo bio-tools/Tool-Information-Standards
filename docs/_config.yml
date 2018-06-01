@@ -18,7 +18,7 @@ title: Tool Information Standard
 email: jison@bioinformatics.dtu.dk
 description: "An **information standard** for the desription of bioinformatics software tools."
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: https://bio-tools.github.io # note, do not include "Tool-Information-Standard" as this seems to get pasted in when this variable is used.
+url: https://bio-tools.github.io/Tool-Information-Standard
 author:
   name: Jon Ison
   twitter:
