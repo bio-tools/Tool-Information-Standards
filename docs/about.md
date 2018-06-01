@@ -15,7 +15,7 @@ This site is based on a [Jekyll theme](https://jekyllrb.com/docs/themes/) which 
 # Overview
 The **Tool Information Standard** is one component of a stack of interrelated technologies and guidelines:
 
-![technology-stack]({{site.url}}/assets/images/technology_stack.png){: .align-center}
+![technology_stack]({{site.url}}/assets/images/technology_stack.png){: .align-center}
 
 - [biotoolsSchema](https://github.com/bio-tools/biotoolsschema) is a formalised XML schema (XSD) which defines a description model for bioinformatics software. It defines a **syntax** for over 50 important scientific, technical and administrative attributes that support cataloguing, discovery, use and interoperability of software. To enable concise information, standard identifiers are used where possible, including EDAM ontology for scientific aspects and internally-defined controlled vocabularies for technical aspects such as programming language and license.
 - [EDAM ontology](https://github.com/edamontology/edamontology) is an ontology of well-established, familiar concepts that are prevalent within bioinformatics and computational biology. It defines the **semantics** - a controlled vocabulary - for describing software in terms of types of input and output *data* and data *identifiers*, supported data *formats*, *operations* and *topics*.
@@ -23,3 +23,24 @@ The **Tool Information Standard** is one component of a stack of interrelated te
 - [Curation Guidelines](http://biotools.readthedocs.io/en/latest/curators_guide.html) describe conventions for *how* each attribute should be specified when registering a tool in bio.tools.  These human-readable and user-friendly **guidelines** provide information that goes beyond syntax and semantics provided by biotoolsSchema and EDAM.
 - [Software Best Practice](https://todo) can be abstracted from the Curation Guidelines, for example, **general recommendations** for the description / documentation of software in contexts other than bio.tools.
 
+
+# Attributes
+A list of tool attributes (see Table below) that must be specified (or stated as not being available) for an entry to be assigned in a 5 tier ratings of entry completeness and quality.  Some attributes are grouped (see tables on right) for purposes of determining adherance to the standard.
+
+![infographic_attributes]({{site.url}}/assets/images/infographic_attributes.png){: .align-center}
+
+
+# Application to bio.tools
+
+The "SPARSE" tier defines the minimum information requirement for new bio.tools entries.  It is [under discussion](https://github.com/bio-tools/biotoolsRegistry/issues/338) to allow a user to filter entries according to tiers in the standard.
+
+The standard provides a basis to monitor bio.tools content and label entries in various ways:
+
+* *entry completeness* ("SPARSE" through to "COMPREHENSIVE")
+* whether an entry was manually inspected
+* whether an entry is verified, *i.e.* conforms to the Curation Guidelines
+* overall *entry quality* ("NEEDS TO IMPROVE" through to "EXCELLENT") - conflating the notions above
+
+![infographic_quality_metrics]({{site.url}}/assets/images/infographic_quality_metrics.png){: .align-center}
+
+If and how to use such labels is currently `under discussion <https://github.com/bio-tools/biotoolsSchema/issues/77>`_.
