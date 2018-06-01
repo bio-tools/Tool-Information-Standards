@@ -13,4 +13,4 @@ An **information standard** for the desription of bioinformatics software tools,
 This site is based on a [Jekyll theme](https://jekyllrb.com/docs/themes/) which you can can find at: {% include icon-github.html username="mmistakes" %}/[jekyll-theme-basically-basic](https://github.com/mmistakes/jekyll-theme-basically-basic)
 
 ## Tool attributes
-![technology-stack]({{site.url}}/assets/images/technology-stack.PNG){: .align-center}
+![technology-stack]({{site.url}}/assets/images/technology-stack.png){: .align-center}
