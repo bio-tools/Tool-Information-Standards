@@ -25,16 +25,14 @@ The **Tool Information Standard** is one component of a stack of interrelated te
 
 
 # Attributes
-A list of tool attributes (see Table below) that must be specified (or stated as not being available) for an entry to be assigned in a 5 tier ratings of entry completeness and quality.  Some attributes are grouped (see tables on right) for purposes of determining adherance to the standard.
+The Tool Information Standard is five lists of tool attributes (see Table below) that must be specified for an entry to be assigned in a 5 tier ratings of *entry completeness*.  Some attributes are grouped (see tables on right) for purposes of determining adherance to the standard.
 
 ![infographic_attributes]({{site.url}}/assets/images/infographic_attributes.png){: .align-center}
 
 
 # Application to bio.tools
 
-The "SPARSE" tier defines the minimum information requirement for new bio.tools entries.  It is [under discussion](https://github.com/bio-tools/biotoolsRegistry/issues/338) to allow a user to filter entries according to tiers in the standard.
-
-The standard provides a basis to monitor bio.tools content and label entries in various ways:
+The "SPARSE" tier defines the minimum information requirement for new bio.tools entries.  It is [under discussion](https://github.com/bio-tools/biotoolsRegistry/issues/338) to allow a user to filter entries according to tiers in the standard.  The standard also provides a basis to monitor bio.tools content and label entries in various ways:
 
 * *entry completeness* ("SPARSE" through to "COMPREHENSIVE")
 * whether an entry was manually inspected
@@ -43,4 +41,4 @@ The standard provides a basis to monitor bio.tools content and label entries in 
 
 ![infographic_quality_metrics]({{site.url}}/assets/images/infographic_quality_metrics.png){: .align-center}
 
-If and how to use such labels is currently `under discussion <https://github.com/bio-tools/biotoolsSchema/issues/77>`_.
+If and how to use such labels is currently [under discussion](https://github.com/bio-tools/biotoolsSchema/issues/77).
