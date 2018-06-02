@@ -36,7 +36,7 @@ The Tool Information Standard is five lists of tool attributes (see Table below)
 
 Attribute | Description | Format | element
 --------- | ----------- | ------ | -------   
-Name | Canonical software name assigned by the software developer or service provider | Text | [``<name>``](http://bio-tools.github.io/biotoolsSchema/#Link1D)
+**Name** | Canonical software name assigned by the software developer or service provider | Text | [``<name>``](http://bio-tools.github.io/biotoolsSchema/#Link1D)
 Description | Short and concise textual description of the software function | Text | [``<description>``](http://bio-tools.github.io/biotoolsSchema/#Link1E)
 Homepage | Homepage of the software, or some URL that best serves this purpose | URL | [``<homepage>``](http://bio-tools.github.io/biotoolsSchema/#Link1F)
 Unique ID | Unique ID of the tool that is assigned upon registration of the software in bio.tools | Text (URL-safe version of tool name) | [``<toolID>``](http://bio-tools.github.io/biotoolsSchema/#Link20)
