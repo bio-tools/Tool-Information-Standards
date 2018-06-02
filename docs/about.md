@@ -24,11 +24,22 @@ The **Tool Information Standard** is one component of a stack of interrelated te
 - [Software Best Practice](https://todo) can be abstracted from the Curation Guidelines, for example, **general recommendations** for the description / documentation of software in contexts other than bio.tools.
 
 
-# Attributes
+# Tool Information Standard
 The Tool Information Standard is five lists of tool attributes (see Table below) that must be specified for an entry to be assigned in a 5 tier ratings of *entry completeness*.  Some attributes are grouped (see tables on right) for purposes of determining adherance to the standard.
 
 ![infographic_attributes]({{site.url}}/assets/images/infographic_attributes.png){: .align-center}
 
+# Attributes
+<div class="datatable-begin"></div>
+
+Food    | Description                           | Category | Sample type
+------- | ------------------------------------- | -------- | -----------
+Apples  | A small, somewhat round ...           | Fruit    | Fuji
+Bananas | A long and curved, often-yellow ...   | Fruit    | Snow
+Kiwis   | A small, hairy-skinned sweet ...      | Fruit    | Golden
+Oranges | A spherical, orange-colored sweet ... | Fruit    | Navel
+
+<div class="datatable-end"></div>
 
 # Application to bio.tools
 
@@ -41,4 +52,5 @@ The "SPARSE" tier defines the minimum information requirement for new bio.tools 
 
 ![infographic_quality_metrics]({{site.url}}/assets/images/infographic_quality_metrics.png){: .align-center}
 
-If and how to use such labels is currently [under discussion](https://github.com/bio-tools/biotoolsSchema/issues/77).
+If and how to use such labels is currently [under discussion](https://github.com/bio-tools/Tool-Information-Standard/issues/1).
+
