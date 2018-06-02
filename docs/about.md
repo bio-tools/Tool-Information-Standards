@@ -44,7 +44,7 @@ Oranges | A spherical, orange-colored sweet ... | Fruit    | Navel
 
 
 Attribute | Description | Format | element
-	    
+--------- | ----------- | ------ | -------   
 Name | Canonical software name assigned by the software developer or service provider | Text | ``<name>``
 Description | Short and concise textual description of the software function | Text | ``<description>``
 Homepage | Homepage of the software, or some URL that best serves this purpose | URL | ``<homepage>``
@@ -66,7 +66,7 @@ Technical monitoring | Technical monitoring results. | Link | ``<link><type>Tech
 ## "Documentation" group
 
 Attribute | Description | Format | element
-   
+--------- | ----------- | ------ | -------   
 General documentation | General documentation | URL | ``<documentation><type>General</type>``
 Manual | Information on how to use the software. | URL | ``<documentation><type>Manual</type>``
 API documentation | Human-readable API documentation. | URL | ``<documentation><type>API documentation</type>``
@@ -75,7 +75,7 @@ API specification | File providing an API specification for the software, e.g. S
 ## "Code availability" group
 
 Attribute | Description | Format | element
-
+--------- | ----------- | ------ | -------   
 Repository | Link to repository where source code, data and other files may be downloaded | URL | ``<link><type>Repository</type>``
 Source code | Software source code. | URL | ``<download><type>Source code</type>``
 Source package | Source package (of various types) for the software. | URL | ``<download><type>Source package</type>``
@@ -83,7 +83,7 @@ Source package | Source package (of various types) for the software. | URL | ``<
 ## "Accessibility" group
 
 Attribute | Description | Format | element
-
+--------- | ----------- | ------ | -------   
 Terms of use | Rules that one must agree to abide by in order to use a service. | URL | ``<link><type>Terms of use</type>``
 Accessibility | Whether the software is freely available for use. | enum (from biotoolsSchema) | ``<labels><Accessibility>``
 Cost | Monetary cost of acquiring the software. | enum (from biotoolsSchema) | ``<labels><Cost>``
@@ -91,7 +91,7 @@ Cost | Monetary cost of acquiring the software. | enum (from biotoolsSchema) | `
 ## "Support" group
 
 Attribute | Description | Format | element
-
+--------- | ----------- | ------ | -------   
 Helpdesk | Helpdesk providing support in using the software. | URL | ``<link><type>Helpdesk</type>``
 Issue tracker | Link to tracker for software issues, bug reports, feature requests etc. | URL | ``<link><type>Issue tracker</type>``
 Mailing list | Link to mailing list for software announcements, discussions, support etc. | URL | ``<link><type>Mailing list</type>``
@@ -100,7 +100,7 @@ Contact person | Primary contact, *e.g.* a person, helpdesk or mailing list | Na
 ## "Downloads" group
 
 Attribute | Description | Format | element
-
+--------- | ----------- | ------ | -------   
 Biological data | Biological data, or a web page on a database portal where such data may be downloaded. | URL | ``<download><type>Biological data</type>``
 Binaries | Binaries for the software. | URL | ``<download><type>Binaries</type>``
 Binary package | Binary package for the software. | URL | ``<download><type>Binary package</type>``
