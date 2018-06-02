@@ -6,6 +6,7 @@ You can read about the standard [here](https://bio-tools.github.io/Tool-Informat
 
 ![infographic_full](/docs/assets/images/infographic_full.png)
 
+# Files
 
 File | Description
 ---- | -----------
