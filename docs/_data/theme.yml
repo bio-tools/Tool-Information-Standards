@@ -34,7 +34,8 @@ google_fonts:
 # pages that have a `title`. Add raw page paths in the order you'd like.
 
 navigation_pages:
-  - about.md
   - tool_information_standard.md
+  - use_cases.md
+  - about.md
   - thanks.md
   - cv.md
