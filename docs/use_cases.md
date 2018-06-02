@@ -19,3 +19,12 @@ The standard also provides a basis to monitor bio.tools content and label entrie
 ![infographic_quality_metrics]({{site.url}}/assets/images/infographic_quality_metrics.png){: .align-center}
 
 If and how to use such labels is currently [under discussion](https://github.com/bio-tools/Tool-Information-Standard/issues/1).
+
+There are several other reasons why the standard may help bio.tools:
+
+* accessible summary of what type of information bio.tools provides
+* flexible information requirement, including a minimum requirements presenting a low barrier to new registrations, compatible / enabling integration with other major related cataloguing efforts (*e.g.* [BioContainers](http://biocontainers.pro))
+* quality tiers motivate individual entry owners to improve their entries (curation as a "game"), with a "gold standard" of entry quality for curators to aspire to  
+* a framework / workflow to guide tasks and priorities of [curators](http://biotools.readthedocs.io/en/latest/curators_guide.html), [thematic editors](http://biotools.readthedocs.io/en/latest/editors_guide.html) and bio.tools admin
+* a basis for metrics of bio.tools quality, KPIs (key performance indicators) of quality improvement objectives, and targets
+* a component of branding bio.tools as a trusted source of quality tool information
