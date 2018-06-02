@@ -35,5 +35,6 @@ google_fonts:
 
 navigation_pages:
   - about.md
+  - tool_information_standard.md
   - thanks.md
   - cv.md
