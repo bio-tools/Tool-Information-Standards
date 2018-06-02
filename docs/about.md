@@ -37,20 +37,20 @@ The Tool Information Standard is five lists of tool attributes (see Table below)
 Attribute | Description | Format | element
 --------- | ----------- | ------ | -------   
 Name | Canonical software name assigned by the software developer or service provider | Text | [``<name>``](http://bio-tools.github.io/biotoolsSchema/#Link1D)
-Description | Short and concise textual description of the software function | Text | ``<description>``
-Homepage | Homepage of the software, or some URL that best serves this purpose | URL | ``<homepage>``
-Unique ID | Unique ID of the tool that is assigned upon registration of the software in bio.tools | Text (URL-safe version of tool name) | ``<toolID>``
-Tool type | The type of application software: a discrete software entity can have more than one type. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type) (from biotoolsSchema) | ``<toolType>``
-Scientific topics | General scientific domain the software serves or other general category, *e.g.* 'Proteomics' | Term and / or URI of [EDAM Topic](http://edamontology.org/topic_0004) concept(s) | ``<topic>``
-Publications | Publications about the software | DOI, PMID or PMCID | ``<publication>``
-Scientific operations | The basic operation(s) performed by the software, *e.g.* 'Multiple sequence alignment' | Term and / or URI of [EDAM Operation](http://edamontology.org/operation_0004) concept(s) | ``<function><operation>``
-Operating system | The operating system supported by a downloadable software package. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#operating-system) (from biotoolsSchema) | ``<labels><OperatingSystem>``
-Language | Name of programming language the software source code was written in, *e.g.* 'C'. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#programming-language) | ``<language>``
-License | Software or data usage license | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license) (from biotoolsSchema) | ``<labels><license>``
-Type of input & output data | Type of primary input / output data (if any), *e.g.* 'Protein sequences' | Term and / or URI of [EDAM Data](http://edamontology.org/data_0006) concept(s) | ``<function><input>/<output><data>``
-Supported data formats | Allowed format(s) of primary inputs/outputs, *e.g.* 'FASTA' | Term and / or URI of [EDAM Format](http://edamontology.org/format_1915) concept(s) | ``<function><input>/<output><format>``
-Scientific benchmark | Scientific benchmarking results. | URL | ``<link><type>Scientific benchmark</type>``
-Technical monitoring | Technical monitoring results. | URL | ``<link><type>Technical monitoring</type>``
+Description | Short and concise textual description of the software function | Text | [``<description>``](http://bio-tools.github.io/biotoolsSchema/#Link1E)
+Homepage | Homepage of the software, or some URL that best serves this purpose | URL | [``<homepage>``](http://bio-tools.github.io/biotoolsSchema/#Link1F)
+Unique ID | Unique ID of the tool that is assigned upon registration of the software in bio.tools | Text (URL-safe version of tool name) | [``<toolID>``](http://bio-tools.github.io/biotoolsSchema/#Link20)
+Tool type | The type of application software: a discrete software entity can have more than one type. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type) (from biotoolsSchema) | [``<toolType>``](http://bio-tools.github.io/biotoolsSchema/#Link39)
+Scientific topics | General scientific domain the software serves or other general category, *e.g.* 'Proteomics' | Term and / or URI of [EDAM Topic](http://edamontology.org/topic_0004) concept(s) | [``<topic>``](http://bio-tools.github.io/biotoolsSchema/#Link3A)
+Publications | Publications about the software | DOI, PMID or PMCID | [``<publication>``](http://bio-tools.github.io/biotoolsSchema/#Link16)
+Scientific operations | The basic operation(s) performed by the software, *e.g.* 'Multiple sequence alignment' | Term and / or URI of [EDAM Operation](http://edamontology.org/operation_0004) concept(s) | [``<function><operation>``](http://bio-tools.github.io/biotoolsSchema/#Link27)
+Operating system | The operating system supported by a downloadable software package. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#operating-system) (from biotoolsSchema) | [``<labels><OperatingSystem>``](http://bio-tools.github.io/biotoolsSchema/#Link3B)
+Language | Name of programming language the software source code was written in, *e.g.* 'C'. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#programming-language) | [``<language>``](http://bio-tools.github.io/biotoolsSchema/#Link3C)
+License | Software or data usage license | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license) (from biotoolsSchema) | [``<labels><license>``](http://bio-tools.github.io/biotoolsSchema/#Link3D)
+Type of input & output data | Type of primary input / output data (if any), *e.g.* 'Protein sequences' | Term and / or URI of [EDAM Data](http://edamontology.org/data_0006) concept(s) | [``<function><input>/<output><data>``](http://bio-tools.github.io/biotoolsSchema/#Link18)
+Supported data formats | Allowed format(s) of primary inputs/outputs, *e.g.* 'FASTA' | Term and / or URI of [EDAM Format](http://edamontology.org/format_1915) concept(s) | [``<function><input>/<output><format>``](http://bio-tools.github.io/biotoolsSchema/#Link18)
+Scientific benchmark | Scientific benchmarking results. | URL | [``<link><type>Scientific benchmark</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1A)
+Technical monitoring | Technical monitoring results. | URL | [``<link><type>Technical monitoring</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1A)
 
 
 
@@ -58,50 +58,50 @@ Technical monitoring | Technical monitoring results. | URL | ``<link><type>Techn
 
 Attribute | Description | Format | element
 --------- | ----------- | ------ | -------   
-General documentation | General documentation | URL | ``<documentation><type>General</type>``
-Manual | Information on how to use the software. | URL | ``<documentation><type>Manual</type>``
-API documentation | Human-readable API documentation. | URL | ``<documentation><type>API documentation</type>``
-API specification | File providing an API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file. | URL | ``<download><type>API specification</type>``
+General documentation | General documentation | URL | [``<documentation><type>General</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1C)
+Manual | Information on how to use the software. | URL | [``<documentation><type>Manual</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1C)
+API documentation | Human-readable API documentation. | URL | [``<documentation><type>API documentation</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1C)
+API specification | File providing an API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file. | URL | [``<download><type>API specification</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B)
 
 ## "Code availability" group
 
 Attribute | Description | Format | element
 --------- | ----------- | ------ | -------   
-Repository | Link to repository where source code, data and other files may be downloaded | URL | ``<link><type>Repository</type>``
-Source code | Software source code. | URL | ``<download><type>Source code</type>``
-Source package | Source package (of various types) for the software. | URL | ``<download><type>Source package</type>``
+Repository | Link to repository where source code, data and other files may be downloaded | URL | [``<link><type>Repository</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1C)
+Source code | Software source code. | URL | [``<download><type>Source code</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B)
+Source package | Source package (of various types) for the software. | URL | [``<download><type>Source package</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B)
 
 ## "Accessibility" group
 
 Attribute | Description | Format | element
 --------- | ----------- | ------ | -------   
-Terms of use | Rules that one must agree to abide by in order to use a service. | URL | ``<link><type>Terms of use</type>``
-Accessibility | Whether the software is freely available for use. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#accessibility) (from biotoolsSchema) | ``<labels><Accessibility>``
-Cost | Monetary cost of acquiring the software. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost) (from biotoolsSchema) | ``<labels><Cost>``
+Terms of use | Rules that one must agree to abide by in order to use a service. | URL | [``<link><type>Terms of use</type>``]()
+Accessibility | Whether the software is freely available for use. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#accessibility) (from biotoolsSchema) | [``<labels><Accessibility>``](http://bio-tools.github.io/biotoolsSchema/#Link41)
+Cost | Monetary cost of acquiring the software. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost) (from biotoolsSchema) | [``<labels><Cost>``](http://bio-tools.github.io/biotoolsSchema/#Link40)
 
 ## "Support" group
 
 Attribute | Description | Format | element
 --------- | ----------- | ------ | -------   
-Helpdesk | Helpdesk providing support in using the software. | URL | ``<link><type>Helpdesk</type>``
-Issue tracker | Link to tracker for software issues, bug reports, feature requests etc. | URL | ``<link><type>Issue tracker</type>``
-Mailing list | Link to mailing list for software announcements, discussions, support etc. | URL | ``<link><type>Mailing list</type>``
-Contact person | Primary contact, *e.g.* a person, helpdesk or mailing list | Name, email, URL and/or ORCID iD",  "``<credit><typeRole>Primary contact</typeRole>``
+Helpdesk | Helpdesk providing support in using the software. | URL | [``<link><type>Helpdesk</type>``]()
+Issue tracker | Link to tracker for software issues, bug reports, feature requests etc. | URL | [``<link><type>Issue tracker</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1A)
+Mailing list | Link to mailing list for software announcements, discussions, support etc. | URL | [``<link><type>Mailing list</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1A)
+Contact person | Primary contact, *e.g.* a person, helpdesk or mailing list | Name, email, URL and/or ORCID iD",  "[``<credit><typeRole>Primary contact</typeRole>``](http://bio-tools.github.io/biotoolsSchema/#Link15)
    
 ## "Downloads" group
 
 Attribute | Description | Format | element
 --------- | ----------- | ------ | -------   
-Biological data | Biological data, or a web page on a database portal where such data may be downloaded. | URL | ``<download><type>Biological data</type>``
-Binaries | Binaries for the software. | URL | ``<download><type>Binaries</type>``
-Binary package | Binary package for the software. | URL | ``<download><type>Binary package</type>``
-Container file | Container file including the software. | URL | ``<download><type>Container file</type>``
-CWL file | Common Workflow Language (CWL) file for the software. | URL | ``<download><type>CWL file</type>``
-Ontology | A file containing an ontology, controlled vocabulary, terminology etc. | URL | ``<download><type>Ontology</type>``
-VM image | Virtual machine (VM) image for the software. | URL | ``<download><type>VM image</type>``
-Tool wrapper (galaxy) | Galaxy tool configuration file (wrapper) for the software. | URL | ``<download><type>Tool wrapper (galaxy)</type>``
-Tool wrapper (taverna) | Taverna configuration file for the software. | URL | ``<download><type>Tool wrapper (taverna)</type>``
-Tool wrapper (other) | Workbench configuration file (other than taverna, galaxy or CWL wrapper) for the software. | URL | ``<download><type>Tool wrapper (other)</type>``
+Biological data | Biological data, or a web page on a database portal where such data may be downloaded. | URL | [``<download><type>Biological data</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B)
+Binaries | Binaries for the software. | URL | [``<download><type>Binaries</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B)
+Binary package | Binary package for the software. | URL | [``<download><type>Binary package</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B)
+Container file | Container file including the software. | URL | [``<download><type>Container file</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B)
+CWL file | Common Workflow Language (CWL) file for the software. | URL | [``<download><type>CWL file</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B)
+Ontology | A file containing an ontology, controlled vocabulary, terminology etc. | URL | [``<download><type>Ontology</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B)
+VM image | Virtual machine (VM) image for the software. | URL | [``<download><type>VM image</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B)
+Tool wrapper (galaxy) | Galaxy tool configuration file (wrapper) for the software. | URL | [``<download><type>Tool wrapper (galaxy)</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B)
+Tool wrapper (taverna) | Taverna configuration file for the software. | URL | [``<download><type>Tool wrapper (taverna)</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B)
+Tool wrapper (other) | Workbench configuration file (other than taverna, galaxy or CWL wrapper) for the software. | URL | [``<download><type>Tool wrapper (other)</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B)
 
 
 # Application to bio.tools
