@@ -4,6 +4,8 @@ An information standard for software description that defines attributes that mu
 
 You can read about the standard [here](https://bio-tools.github.io/Tool-Information-Standard/).
 
+[!tool_information_standard_full](https://github.com/bio-tools/Tool-Information-Standard/tree/master/docs/assets/images/infographic_full.png)
+
 
 File | Description
 ---- | -----------
