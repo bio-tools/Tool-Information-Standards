@@ -10,8 +10,9 @@ introduction: |
 
   - [Broadly applicable to diverse types of tool](#tooltypes) including application software, workflows and APIs. 
   - Uses software attributes defined in [biotoolsSchema](https://github.com/bio-tools/biotoolsschema)
-  - Uses a controlled vocabulary for types of data, data formats, operations and common topics defined in the [EDAM ontology](https://github.com/edamontology/edamontology)
+  - Makes heavy use of controlled vocabularies including the [EDAM ontology](https://github.com/edamontology/edamontology) for types of data, data formats, operations and common topics.
   - It is an [open community-driven project](#community)
+
 actions:
   - label: "Read More"
     icon: arrow-right
