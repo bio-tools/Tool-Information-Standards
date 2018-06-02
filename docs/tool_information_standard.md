@@ -14,8 +14,8 @@ The **Tool Information Standard** is one component of a stack of interrelated te
 - [Software Best Practice](https://todo) can be abstracted from the Curation Guidelines, for example, **general recommendations** for the description / documentation of software in contexts other than bio.tools.
 
 
-# Tool Information Standard
-The Tool Information Standard is five lists of tool attributes (see Table below) that must be specified for an entry to be assigned in a 5 tier ratings of *entry completeness*.  Some attributes are grouped (see tables on right) for purposes of determining adherance to the standard.
+# Tiers in the standard
+The Tool Information Standard is five lists of tool attributes (see Table below) that must be specified for a software description (*e.g.* a bio.tools entry) to be assigned in a 5 tier ratings of *entry completeness*.  Some attributes are grouped (see tables on right) for purposes of determining adherance to the standard.
 
 ![infographic_attributes]({{site.url}}/assets/images/infographic_attributes.png){: .align-center}
 

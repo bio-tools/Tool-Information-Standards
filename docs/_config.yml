@@ -28,7 +28,7 @@ github_username: # joncison - this links to me, not really appropriate
 logo: /assets/icons/ToolInfoStandardLogo.svg
 search: true
 search_full_content: true
-search_provider: # lunr (default), algolia
+search_provider: lunr # lunr (default), algolia
 algolia:
   application_id: # YOUR_APPLICATION_ID
   index_name: # YOUR_INDEX_NAME
@@ -44,7 +44,7 @@ plugins: # previsously gems
   - jekyll-sitemap
   - jekyll-paginate
 feed:
-  path: atom.xml
+  path: # atom.xml
 
 # Pagination - https://jekyllrb.com/docs/pagination/
 paginate: 10
