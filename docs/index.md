@@ -16,7 +16,7 @@ introduction: |
 actions:
   - label: "Read More"
     icon: arrow-right
-    url: "https://bio-tools.github.io/Tool-Information-Standard/about.html"
+    url: "https://bio-tools.github.io/Tool-Information-Standard/tool_information_standard.html"
   - label: "Contribute"
     icon: github
     url: "https://github.com/bio-tools/Tool-Information-Standard"
