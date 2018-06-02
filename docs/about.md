@@ -45,7 +45,7 @@ Attribute | Description | Format | element
 **Publications** | Publications about the software | DOI, PMID or PMCID | [``<publication>``](http://bio-tools.github.io/biotoolsSchema/#Link16)
 **Scientific operations** | The basic operation(s) performed by the software, *e.g.* 'Multiple sequence alignment' | Term and / or URI of [EDAM Operation](http://edamontology.org/operation_0004) concept(s) | [``<function><operation>``](http://bio-tools.github.io/biotoolsSchema/#Link27)
 **Operating system** | The operating system supported by a downloadable software package. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#operating-system) (from biotoolsSchema) | [``<labels><OperatingSystem>``](http://bio-tools.github.io/biotoolsSchema/#Link3B)
-**Language** | Name of programming language the software source code was written in, *e.g.* 'C'. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#programming-language) | [``<language>``](http://bio-tools.github.io/biotoolsSchema/#Link3C)
+**Language** | Name of programming language the software source code was written in, *e.g.* 'C'. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#programming-language) (from biotoolsSchema) | [``<language>``](http://bio-tools.github.io/biotoolsSchema/#Link3C)
 **License** | Software or data usage license | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license) (from biotoolsSchema) | [``<labels><license>``](http://bio-tools.github.io/biotoolsSchema/#Link3D)
 **Type of input & output data** | Type of primary input / output data (if any), *e.g.* 'Protein sequences' | Term and / or URI of [EDAM Data](http://edamontology.org/data_0006) concept(s) | [``<function><input>/<output><data>``](http://bio-tools.github.io/biotoolsSchema/#Link18)
 **Supported data formats** | Allowed format(s) of primary inputs/outputs, *e.g.* 'FASTA' | Term and / or URI of [EDAM Format](http://edamontology.org/format_1915) concept(s) | [``<function><input>/<output><format>``](http://bio-tools.github.io/biotoolsSchema/#Link18)
@@ -86,7 +86,7 @@ Attribute | Description | Format | element
 **Helpdesk** | Helpdesk providing support in using the software. | URL | [``<link><type>Helpdesk</type>``]()
 **Issue tracker** | Link to tracker for software issues, bug reports, feature requests etc. | URL | [``<link><type>Issue tracker</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1A)
 **Mailing list** | Link to mailing list for software announcements, discussions, support etc. | URL | [``<link><type>Mailing list</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1A)
-**Contact person** | Primary contact, *e.g.* a person, helpdesk or mailing list | Name, email, URL and/or ORCID iD",  "[``<credit><typeRole>Primary contact</typeRole>``](http://bio-tools.github.io/biotoolsSchema/#Link15)
+**Contact person** | Primary contact, *e.g.* a person, helpdesk or mailing list | Name, email, URL and/or ORCID iD | [``<credit><typeRole>Primary contact</typeRole>``](http://bio-tools.github.io/biotoolsSchema/#Link15)
    
 ## "Downloads" group
 
