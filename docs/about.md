@@ -31,16 +31,7 @@ The Tool Information Standard is five lists of tool attributes (see Table below)
 
 # Attributes
 
-<div class="datatable-begin"></div>
-
-Food    | Description                           | Category | Sample type
-------- | ------------------------------------- | -------- | -----------
-Apples  | A small, somewhat round ...           | Fruit    | Fuji
-Bananas | A long and curved, often-yellow ...   | Fruit    | Snow
-Kiwis   | A small, hairy-skinned sweet ...      | Fruit    | Golden
-Oranges | A spherical, orange-colored sweet ... | Fruit    | Navel
-
-<div class="datatable-end"></div>
+## General attributes
 
 
 Attribute | Description | Format | element
@@ -49,17 +40,17 @@ Name | Canonical software name assigned by the software developer or service pro
 Description | Short and concise textual description of the software function | Text | ``<description>``
 Homepage | Homepage of the software, or some URL that best serves this purpose | URL | ``<homepage>``
 Unique ID | Unique ID of the tool that is assigned upon registration of the software in bio.tools | Text (URL-safe version of tool name) | ``<toolID>``
-Tool type | The type of application software: a discrete software entity can have more than one type. | enum (from biotoolsSchema, see below) | ``<toolType>``
-Scientific topics | General scientific domain the software serves or other general category, *e.g.* 'Proteomics' | Term and / or URI of [EDAM Topic](http://edamontology.org/topic_0004) concept(s) (1) | ``<topic>``
+Tool type | The type of application software: a discrete software entity can have more than one type. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type) (from biotoolsSchema) | ``<toolType>``
+Scientific topics | General scientific domain the software serves or other general category, *e.g.* 'Proteomics' | Term and / or URI of [EDAM Topic](http://edamontology.org/topic_0004) concept(s) | ``<topic>``
 Publications | Publications about the software | DOI, PMID or PMCID | ``<publication>``
 Scientific operations | The basic operation(s) performed by the software, *e.g.* 'Multiple sequence alignment' | Term and / or URI of [EDAM Operation](http://edamontology.org/operation_0004) concept(s) | ``<function><operation>``
-Operating system | The operating system supported by a downloadable software package. | enum (from biotoolsSchema) | ``<labels><OperatingSystem>``
-Language | Name of programming language the software source code was written in, *e.g.* 'C'. | ``<language>``
-License | Software or data usage license | enum (from biotoolsSchema) | ``<labels><license>``
+Operating system | The operating system supported by a downloadable software package. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#operating-system) (from biotoolsSchema) | ``<labels><OperatingSystem>``
+Language | Name of programming language the software source code was written in, *e.g.* 'C'. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#programming-language) | ``<language>``
+License | Software or data usage license | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license) (from biotoolsSchema) | ``<labels><license>``
 Type of input & output data | Type of primary input / output data (if any), *e.g.* 'Protein sequences' | Term and / or URI of [EDAM Data](http://edamontology.org/data_0006) concept(s) | ``<function><input>/<output><data>``
 Supported data formats | Allowed format(s) of primary inputs/outputs, *e.g.* 'FASTA' | Term and / or URI of [EDAM Format](http://edamontology.org/format_1915) concept(s) | ``<function><input>/<output><format>``
-Scientific benchmark | Scientific benchmarking results. | Link | ``<link><type>Scientific benchmark</type>``
-Technical monitoring | Technical monitoring results. | Link | ``<link><type>Technical monitoring</type>``
+Scientific benchmark | Scientific benchmarking results. | URL | ``<link><type>Scientific benchmark</type>``
+Technical monitoring | Technical monitoring results. | URL | ``<link><type>Technical monitoring</type>``
 
 
 
@@ -85,8 +76,8 @@ Source package | Source package (of various types) for the software. | URL | ``<
 Attribute | Description | Format | element
 --------- | ----------- | ------ | -------   
 Terms of use | Rules that one must agree to abide by in order to use a service. | URL | ``<link><type>Terms of use</type>``
-Accessibility | Whether the software is freely available for use. | enum (from biotoolsSchema) | ``<labels><Accessibility>``
-Cost | Monetary cost of acquiring the software. | enum (from biotoolsSchema) | ``<labels><Cost>``
+Accessibility | Whether the software is freely available for use. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#accessibility) (from biotoolsSchema) | ``<labels><Accessibility>``
+Cost | Monetary cost of acquiring the software. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost) (from biotoolsSchema) | ``<labels><Cost>``
 
 ## "Support" group
 
