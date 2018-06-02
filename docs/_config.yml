@@ -26,14 +26,14 @@ author:
 twitter_username:
 github_username: # joncison - this links to me, not really appropriate
 logo: /assets/icons/ToolInfoStandardLogo.svg
-search: true
-search_full_content: true
-search_provider: lunr # lunr (default), algolia
-algolia:
-  application_id: # YOUR_APPLICATION_ID
-  index_name: # YOUR_INDEX_NAME
-  search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
-  powered_by: # true (default), false
+# search: true
+# search_full_content: true
+# search_provider: lunr # lunr (default), algolia
+# algolia:
+#  application_id: # YOUR_APPLICATION_ID
+#  index_name: # YOUR_INDEX_NAME
+#  search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
+#  powered_by: # true (default), false
 
 # Build settings
 markdown: kramdown
