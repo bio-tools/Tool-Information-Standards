@@ -28,3 +28,9 @@ There are several other reasons why the standard may help bio.tools:
 * a framework / workflow to guide tasks and priorities of [curators](http://biotools.readthedocs.io/en/latest/curators_guide.html), [thematic editors](http://biotools.readthedocs.io/en/latest/editors_guide.html) and bio.tools admin
 * a basis for metrics of bio.tools quality, KPIs (key performance indicators) of quality improvement objectives, and targets
 * a component of branding bio.tools as a trusted source of quality tool information
+
+# Applicability and availability of attributes
+The Tool Information Standard does not yet reflect the fact that different types of tool have specific information requirements.  Not all attributes are applicable to all types of tool, *e.g.* source code is not normally available for database portals.  For purposes of measuring compliance to the standard, applicability will be formally defined on a tool type-specific basis; an applicability matrix of attributes versus tool types.
+
+The application of the Tool Information Standard depends on whether the quality of the software metadata, or the underlying software and software project, are being assessed.  In the first case (metadata assessment), an attribute will only contribute to compliance metrics if, in fact, it is both applicable to that type of tool (see above) and actually available.  In case an attribute is applicable but not available, a positive statement to that effect will be required during registration to get a tick for that attribute, *e.g.* the user would need explicitly to specify "a publication is not available" for "Publication".  In the second case (tool or project assessment) the "availability" consideration is not relevant.
+

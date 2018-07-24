@@ -15,7 +15,8 @@ The **Tool Information Standard** is one component of a stack of interrelated te
 
 
 # Tiers in the standard
-The Tool Information Standard is five lists of tool attributes (see Table below) that must be specified for a software description (*e.g.* a bio.tools entry) to be assigned in a 5 tier ratings of *description completeness*.  Some attributes are grouped (see tables on right) for purposes of determining adherence to the standard.
+The Tool Information Standard is five lists of tool attributes (see Table below) that must be specified for a software description (*e.g.* a bio.tools entry) to be assigned in a 5 tier ratings of *description completeness*.  Some attributes are grouped (see tables on right) for purposes of determining adherence to the standard. For example "Documentation" is satisfied if at least one of "General" documentation", "API documentation" or "API specification" is specified.
+
 
 ![infographic_attributes]({{site.url}}/assets/images/infographic_attributes.png){: .align-center}
 
@@ -26,10 +27,10 @@ The Tool Information Standard is five lists of tool attributes (see Table below)
 
 Attribute | Description | Format | biotoolsSchema | Guideline
 --------- | ----------- | ------ | -------------- | ---------   
-**Name** | Canonical software name assigned by the software developer or service provider | Text | [``<name>``](http://bio-tools.github.io/biotoolsSchema/#Link1D) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#id18)
+**Name** | Canonical software name assigned by the software developer or service provider | Text | [``<name>``](http://bio-tools.github.io/biotoolsSchema/#Link1D) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool)
 **Description** | Short and concise textual description of the software function | Text | [``<description>``](http://bio-tools.github.io/biotoolsSchema/#Link1E) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#description)
 **Homepage** | Homepage of the software, or some URL that best serves this purpose | URL | [``<homepage>``](http://bio-tools.github.io/biotoolsSchema/#Link1F) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#homepage)
-**Unique ID** | Unique ID of the tool that is assigned upon registration of the software in bio.tools | Text (URL-safe version of tool name) | [``<toolID>``](http://bio-tools.github.io/biotoolsSchema/#Link20) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#id121)
+**Unique ID** | Unique ID of the tool that is assigned upon registration of the software in bio.tools | Text (URL-safe version of tool name) | [``<toolID>``](http://bio-tools.github.io/biotoolsSchema/#Link20) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#biotoolsid)
 **Tool type** | The type of application software: a discrete software entity can have more than one type. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type) (from biotoolsSchema) | [``<toolType>``](http://bio-tools.github.io/biotoolsSchema/#Link39) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type)
 **Scientific topics** | General scientific domain the software serves or other general category, *e.g.* 'Proteomics' | Term and / or URI of [EDAM Topic](http://edamontology.org/topic_0004) concept(s) | [``<topic>``](http://bio-tools.github.io/biotoolsSchema/#Link3A) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#topic)
 **Publications** | Publications about the software | DOI, PMID or PMCID | [``<publication>``](http://bio-tools.github.io/biotoolsSchema/#Link16) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#publications-group)
@@ -41,6 +42,8 @@ Attribute | Description | Format | biotoolsSchema | Guideline
 **Supported data formats** | Allowed format(s) of primary inputs/outputs, *e.g.* 'FASTA' | Term and / or URI of [EDAM Format](http://edamontology.org/format_1915) concept(s) | [``<function><input>/<output><format>``](http://bio-tools.github.io/biotoolsSchema/#Link18) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data)
 **Scientific benchmark** | Scientific benchmarking results. | URL | [``<link><type>Scientific benchmark</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1A) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#links-group)
 **Technical monitoring** | Technical monitoring results. | URL | [``<link><type>Technical monitoring</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1A) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#links-group)
+
+
 
 
 
