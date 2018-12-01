@@ -2,7 +2,6 @@
 
 ## General attributes
 
-<div class="datatable-begin"></div>
 
 Attribute | Description | Format | biotoolsSchema | Guideline
 --------- | ----------- | ------ | -------------- | ---------   
@@ -72,4 +71,3 @@ Attribute | Description | Format | biotoolsSchema | Guideline
 **Contributor**                 | Some other role in software production or service delivery including design, deployment, system administration, evaluation, testing, documentation, training, user support etc. | ORCID iD     | [``<credit><typeRole>Contributor</typeRole>``](http://bio-tools.github.io/biotoolsSchema/#Link15) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#credits-group)
 **Support**                     | Provider of support in using the software.                                                     | ORCID iD     | [``<credit><typeRole>Documentor</typeRole>``](http://bio-tools.github.io/biotoolsSchema/#Link15) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#credits-group) 
 
-<div class="datatable-end"></div>
