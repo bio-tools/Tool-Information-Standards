@@ -5,7 +5,7 @@
 
 | Attribute                       | Description                                                                                    | Label           | Type | Semantics  | biotoolsSchema | Guideline
 | ------------------------------- | ---------------------------------------------------------------------------------------------- | --------------- | ---- | ---------- | -------------- | ---------
-| <td colspan="3"> **General attributes* </td>  
+| <td colspan="6"> *General attributes* </td>  
 | **Name**                        | Canonical software name assigned by the software developer or service provider                 | name            | Text | -          | [``<name>``](http://bio-tools.github.io/biotoolsSchema/#Link1D)        | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool)
 | **Description**                 | Short and concise textual description of the software function                                 | description     | Text | -          | [``<description>``](http://bio-tools.github.io/biotoolsSchema/#Link1E) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#description)
 | **Tagline**                     | Very short (single sentence) description of the software.                                      | tagline         | - | -          | -                 | -
