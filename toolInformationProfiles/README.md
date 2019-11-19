@@ -17,7 +17,7 @@ The key words "MUST", "MUST NOT", "SHOULD", and "MAY", and "OPTIONAL" are to be 
 
 Tool information profiles **MUST** comply with the Tool Information Profile Schema (a JSON schema). This schema supports most of the biotoolsSchema attributes.  It does not make sense to include some of the attributes, and these are excluded. 
 
-It is anticipated the tool information profiles will be used by a tool description verification service, which will take as input 1) a list of bio.tools tool IDs and 2) a tool information profile, and produce as output a report on the compliance of hte tool descriptions to the standard, in human and machine-readable formats. Tool descriptions would be consumed in JSON format, *e.g.* by invoking the [bio.tools](https://bio.tools) API.
+It is anticipated the tool information profiles will be used by a tool description verification service, which will take as input 1) a list of bio.tools tool IDs and 2) a tool information profile, and produce as output a report on the compliance of the tool descriptions to the standard, in human and machine-readable formats. Tool descriptions would be consumed in JSON format, *e.g.* by invoking the [bio.tools](https://bio.tools) API.
 
 ![toolDescriptionVerifier](toolDescriptionVerifier.png)
 
