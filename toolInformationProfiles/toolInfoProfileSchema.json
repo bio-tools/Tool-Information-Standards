@@ -50,6 +50,46 @@
 						"Not applicable"
 					]
 				},
+			    	"biotoolsID": {
+					"type": "string",
+					"enum": [
+						"Mandatory",
+						"Reccomended",
+						"Optional",
+						"Not applicable"
+					]
+				},
+			        	"biotoolsCURIE": {
+					"type": "string",
+					"enum": [
+						"Mandatory",
+						"Reccomended",
+						"Optional",
+						"Not applicable"
+					]
+							},
+			        	"version": {
+					"type": "string",
+					"enum": [
+						"Mandatory",
+						"Reccomended",
+						"Optional",
+						"Not applicable"
+					]
+					},
+			        	"otherID": {
+					"type": "string",
+					"enum": [
+						"Mandatory",
+						"Reccomended",
+						"Optional",
+						"Not applicable"
+					]
+					},
+
+			    
+
+			    
 				"operation": {
 					"type": "string",
 					"enum": [
