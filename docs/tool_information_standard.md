@@ -25,8 +25,8 @@ The Tool Information Standard is five lists of tool attributes (see Table below)
 ## General attributes
 
 
-Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Guideline
---------- | ----------- | ------ | -------------- | | --------------------- | ---------  
+Attribute | Description | Format | biotoolsSchema | toolInfoProfileSchema | Guideline
+--------- | ----------- | ------ | -------------- | --------------------- | ---------  
 **Name** | Canonical software name assigned by the software developer or service provider | Text | [``<name>``](http://bio-tools.github.io/biotoolsSchema/#Link1D) | name | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool)
 **Description** | Short and concise textual description of the software function | Text | [``<description>``](http://bio-tools.github.io/biotoolsSchema/#Link1E) | description | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#description)
 **Homepage** | Homepage of the software, or some URL that best serves this purpose | URL | [``<homepage>``](http://bio-tools.github.io/biotoolsSchema/#Link1F) | homepage | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#homepage)
@@ -39,8 +39,8 @@ Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Gu
 
 
 ## Scientific attributes
-Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Guideline
---------- | ----------- | ------ | -------------- | | --------------------- | ---------  
+Attribute | Description | Format | biotoolsSchema | toolInfoProfileSchema | Guideline
+--------- | ----------- | ------ | -------------- | --------------------- | ---------  
 **Scientific topics** | General scientific domain the software serves or other general category, *e.g.* 'Proteomics' | Term and / or URI of [EDAM Topic](http://edamontology.org/topic_0004) concept(s) | [``<topic>``](http://bio-tools.github.io/biotoolsSchema/#Link3A) | topic | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#topic)
 **Scientific operations** | The basic operation(s) performed by the software, *e.g.* 'Multiple sequence alignment' | Term and / or URI of [EDAM Operation](http://edamontology.org/operation_0004) concept(s) | [``<function><operation>``](http://bio-tools.github.io/biotoolsSchema/#Link27) | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#operation)
 **Type of input data** | Type of primary input data (if any), *e.g.* 'Protein sequences' | Term and / or URI of [EDAM Data](http://edamontology.org/data_0006) concept(s) | [``<function><input><data>``](http://bio-tools.github.io/biotoolsSchema/#Link18) | inputData | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data)
@@ -53,8 +53,8 @@ Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Gu
 
 
 ## Technical attributes
-Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Guideline
---------- | ----------- | ------ | -------------- | | --------------------- | ---------  
+Attribute | Description | Format | biotoolsSchema | toolInfoProfileSchema | Guideline
+--------- | ----------- | ------ | -------------- | --------------------- | ---------  
 **Operating system** | The operating system supported by a downloadable software package. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#operating-system) (from biotoolsSchema) | [``<labels><OperatingSystem>``](http://bio-tools.github.io/biotoolsSchema/#Link3B) | operatingSystem | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system)
 **Language** | Name of programming language the software source code was written in, *e.g.* 'C'. | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#programming-language) (from biotoolsSchema) | [``<language>``](http://bio-tools.github.io/biotoolsSchema/#Link3C) | language | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language)
 **License** | Software or data usage license | [enum](http://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#license) (from biotoolsSchema) | [``<labels><license>``](http://bio-tools.github.io/biotoolsSchema/#Link3D) | license | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#license)
@@ -65,8 +65,8 @@ Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Gu
 
 
 ## Link attributes
-Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Guideline
---------- | ----------- | ------ | -------------- | | --------------------- | ---------  
+Attribute | Description | Format | biotoolsSchema | toolInfoProfileSchema | Guideline
+--------- | ----------- | ------ | -------------- | --------------------- | ---------  
 **Discussion forum** | Online forum for user discussions about the software. | URL | [``<link><type>Discussion forum</type>``]() | discussionForum | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group)
 **Helpdesk** | Helpdesk providing support in using the software. | URL | [``<link><type>Helpdesk</type>``]() | helpdesk | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group)
 **Issue tracker** | Link to tracker for software issues, bug reports, feature requests etc. | URL | [``<link><type>Issue tracker</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1A) | issueTracker | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group)
@@ -82,8 +82,8 @@ Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Gu
 
 
 ## Download attributes
-Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Guideline
---------- | ----------- | ------ | -------------- | | --------------------- | ---------  
+Attribute | Description | Format | biotoolsSchema | toolInfoProfileSchema | Guideline
+--------- | ----------- | ------ | -------------- | --------------------- | ---------  
 **API specification** | File providing an API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file. | URL | [``<download><type>API specification</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B) | apiSpecification | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group)
 **Biological data** | Biological data, or a web page on a database portal where such data may be downloaded. | URL | [``<download><type>Biological data</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B) | biologicalData | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group)
 **Binaries** | Binaries for the software. | URL | [``<download><type>Binaries</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1B) | binaries | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group)
@@ -105,8 +105,8 @@ Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Gu
 
 
 ## Documentation attributes
-Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Guideline
---------- | ----------- | ------ | -------------- | | --------------------- | ---------  
+Attribute | Description | Format | biotoolsSchema | toolInfoProfileSchema | Guideline
+--------- | ----------- | ------ | -------------- | --------------------- | ---------  
 **API documentation** | Human-readable API documentation. | URL | [``<documentation><type>API documentation</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1C) | apiDocumentation | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group)
 **Citation instructions** | Human-readable API documentation. | URL | [``<documentation><type>Citation instructions</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1C) | citationInstructions | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group)
 **Command-line options** | Information about the command-line interface to a tool. | URL | [``<documentation><type>Command-line options</type>``](http://bio-tools.github.io/biotoolsSchema/#Link1C) | commandlineOptions | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group)
@@ -123,8 +123,8 @@ Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Gu
 
 
 ## Publication attributes
-Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Guideline
---------- | ----------- | ------ | -------------- | | --------------------- | ---------  
+Attribute | Description | Format | biotoolsSchema | toolInfoProfileSchema | Guideline
+--------- | ----------- | ------ | -------------- | --------------------- | ---------  
 **Primary publication** | The principal publication about the tool itself; the article to cite when acknowledging use of the tool.  | DOI, PMID or PMCID | [``<publication>``](http://bio-tools.github.io/biotoolsSchema/#Link16) | publicationPrimary | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-group)
 **Method publication** | A publication describing a scientific method or algorithm implemented by the tool. | DOI, PMID or PMCID | [``<publication>``](http://bio-tools.github.io/biotoolsSchema/#Link16) | publicationMethod | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-group)
 **Usage publication** | A publication describing the application of the tool to scientific research, a particular task or dataset. | DOI, PMID or PMCID | [``<publication>``](http://bio-tools.github.io/biotoolsSchema/#Link16) | publicationUsage | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-group)
@@ -133,8 +133,8 @@ Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Gu
 
 
 ## Relation attributes
-Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Guideline
---------- | ----------- | ------ | -------------- | | --------------------- | ---------  
+Attribute | Description | Format | biotoolsSchema | toolInfoProfileSchema | Guideline
+--------- | ----------- | ------ | -------------- | --------------------- | ---------  
 **isNewVersionOf** | The software is a new version of an existing software, typically providing new or improved functionality. | URL | [``<relation><type>isNewVersionOf</type>``](http://bio-tools.github.io/biotoolsSchema/#) | relationIsNewVersionOf | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group)
 **hasNewVersion** | (inverse of above) | URL | [``<relation><type>hasNewVersion</type>``](http://bio-tools.github.io/biotoolsSchema/#) | relationHasNewVersion | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group)
 **uses** | The software provides an interface to or in some other way uses the functions of other software under the hood, e.g. invoking a command-line tool or calling a Web API, Web service or SPARQL endpoint to perform its function. | URL | [``<relation><type>uses</type>``](http://bio-tools.github.io/biotoolsSchema/#) | relationUses | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group)
@@ -144,8 +144,8 @@ Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Gu
 
 
 ## Credit / contact attributes
-Attribute | Description | Format | biotoolsSchema | | toolInfoProfileSchema | Guideline
---------- | ----------- | ------ | -------------- | | --------------------- | ---------  
+Attribute | Description | Format | biotoolsSchema | toolInfoProfileSchema | Guideline
+--------- | ----------- | ------ | -------------- | --------------------- | ---------  
 **Primary contact** | The primary point of contact for the software. | Name, email, URL and/or ORCID iD | [``<credit><typeRole>Primary contact</typeRole>``](http://bio-tools.github.io/biotoolsSchema/#Link15) | creditprimaryContact | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group)
 **Person credit** | Credit of an individual. | Name, email, URL and/or ORCID iD | [``<credit><typeRole>Primary contact</typeRole>``](http://bio-tools.github.io/biotoolsSchema/#Link15) | creditPerson | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group)
 **Project credit** | Credit of a community software project not formally associated with any single institute. | Name, email, URL and/or ORCID iD | [``<credit><typeRole>Primary contact</typeRole>``](http://bio-tools.github.io/biotoolsSchema/#Link15) | creditProject | [link](http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group)
