@@ -3,9 +3,10 @@
 	"$ref": "#/definitions/toolInfoProfile",
 	"definitions": {
 		"toolInfoProfile": {
+			"title": "Tool information profile",
+			"description": "A JSON schema which specifies which tool attributes - defined in biotoolsSchema - should be specified within a set of tool descriptions.",
 			"type": "object",
-			"properties": 
-			{
+			"properties": {
 				"metadata": {
 					"type": "object",
 					"properties": {
@@ -28,45 +29,46 @@
 					]
 				},
 				"rules": {
+					"title": "Tool information profile rules",
+					"description": "A set of rules that define the tool information profile.",
 					"type": "array",
 					"items": {
 						"$ref": "#/definitions/rule"
 					}
 				}
 			},
-			"additionalProperties": false,
 			"required": [
 				"metadata",
 				"rules"
-			]
-
+			],
+			"additionalProperties": false
 		},
 		"rule": {
 			"type": "object",
-			
-					"properties": {
-						"attributes": {
-							"$ref": "#/definitions/attributes"
-						},
-						"constraint": {
-							"$ref": "#/definitions/constraint"
-						},
-						"types": {
-							"$ref": "#/definitions/types"
-						},
-						"requirement": {
-							"$ref": "#/definitions/requirement"
-						}
-					},
-					"additionalProperties": false,
-					"required": [
-						"attributes",
-						"types",
-						"requirement"
-					]
-					
+			"properties": {
+				"attributes": {
+					"$ref": "#/definitions/attributes"
+				},
+				"constraint": {
+					"$ref": "#/definitions/constraint"
+				},
+				"types": {
+					"$ref": "#/definitions/types"
+				},
+				"requirement": {
+					"$ref": "#/definitions/requirement"
+				}
+			},
+			"required": [
+				"attributes",
+				"types",
+				"requirement"
+			],
+			"additionalProperties": false
 		},
 		"requirement": {
+			"title": "Rule (information requirement)",
+			"description": "The information requirement for attribute(s) in a rule.",
 			"type": "string",
 			"enum": [
 				"Mandatory",
@@ -76,14 +78,17 @@
 			]
 		},
 		"constraint": {
+			"title": "Rule (tool attribute constraints)",
+			"description": "Whther a rule must be applied to (satisfied by) at least 1, or all, of the attributes.",
 			"type": "string",
 			"enum": [
 				"1 or more",
 				"all"
 			]
 		},
-
 		"types": {
+			"title": "Rule (tool types)",
+			"description": "Types of tool (defined in biotoolsSchema) which the rule applies to.",
 			"type": "array",
 			"uniqueItems": true,
 			"items": {
@@ -108,6 +113,8 @@
 			}
 		},
 		"attributes": {
+			"title": "Rule (tool attributes)",
+			"description": "Tool attributes (defined in biotoolsSchema) that are covered by a rule.",
 			"type": "array",
 			"uniqueItems": true,
 			"items": {
@@ -149,7 +156,7 @@
 					"service",
 					"galaxyService",
 					"technicalMonitoring",
-					"linkOther",					
+					"linkOther",
 					"apiSpecification",
 					"biologicalData",
 					"binaries",
@@ -160,7 +167,7 @@
 					"sourceCode",
 					"softwarePackage",
 					"testData",
-					"testScript",					
+					"testScript",
 					"toolWrapperCWL",
 					"toolWrapperGalaxy",
 					"toolWrapperTaverna",
