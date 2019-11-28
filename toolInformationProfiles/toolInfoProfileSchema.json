@@ -57,6 +57,11 @@
 				},
 				"requirement": {
 					"$ref": "#/definitions/requirement"
+				},
+				"comment": {
+					"title": "Rule comment",
+					"description": "An optional comment about the rule",
+					"type": "string"
 				}
 			},
 			"required": [
@@ -72,7 +77,7 @@
 			"type": "string",
 			"enum": [
 				"Mandatory",
-				"Reccomended",
+				"Recomended",
 				"Optional",
 				"Not applicable"
 			]
@@ -193,6 +198,7 @@
 					"publicationUsage",
 					"publicationBenchmarkingStudy",
 					"publicationReview",
+					"publicationOther",
 					"relationIsNewVersionOf",
 					"relationHasNewVersion",
 					"relationUses",
