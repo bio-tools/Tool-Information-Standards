@@ -5,6 +5,8 @@ layout: about
 
 # bio.tools
 
+[bio.tools](https://bio.tools) uses internally a tool profile that lists software attributes (from biotoolsSchema) that must be specified within a 5-tier scale of description completeness and quality. It provides practical **metrics** to assess the descriptions of individual tools, and the curation of the corpus as a wholle. 
+
 The corpus of [bio.tools](https://bio.tools) content is being improved progressively according to tiers in the standard, the aim in the first instance being to bring all entries up to at least "DETAILED" standard.
 
 The "SPARSE" tier (name, description, homepage, unique ID) defines the minimum information requirement for new bio.tools entries.  It is [under discussion](https://github.com/bio-tools/biotoolsRegistry/issues/338) to allow a user to filter entries according to tiers in the standard.

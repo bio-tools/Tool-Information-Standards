@@ -1,8 +1,8 @@
 # Tool Information Profiles
 
-A *tool information profile* is a JSON document which specifies which tool attributes - defined in [biotoolsSchema](https://github.com/bio-tools/biotoolsSchema) - should be specified within a set of tool descriptions.
+A *tool information profile* is a JSON document which specifies which tool attributes - defined in [biotoolsSchema](https://github.com/bio-tools/biotoolsSchema) - should be specified for different types of tools within a set of tool descriptions.
 
-biotoolsSchema [attributes](https://biotoolsschema.readthedocs.io/en/latest/biotoolsschema_elements.html#) may be specified within a profile as:
+Within a profile, biotoolsSchema [attributes](https://biotoolsschema.readthedocs.io/en/latest/biotoolsschema_elements.html#) may be specified for different [tool types](https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type) as:  
 * **Mandatory** - the attribute **MUST** be defined
 * **Recommended** - the attribute **SHOULD** be defined
 * **Optional** - the attribute **MAY** be defined
