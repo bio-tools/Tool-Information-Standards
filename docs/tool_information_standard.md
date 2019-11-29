@@ -1,9 +1,9 @@
 ---
-title: "Tool Information Standard"
+title: "Tool Information Standards"
 layout: about
 ---
 
-The **Tool Information Standard** is one component of a stack of interrelated technologies and guidelines:
+The **Tool Information Standards** comprise a stack of interrelated technologies and guidelines:
 
 ![technology_stack]({{site.url}}/assets/images/technology_stack.png){: .align-center}
 

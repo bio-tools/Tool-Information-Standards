@@ -2,8 +2,8 @@
 layout: posts
 paginate: true
 entries_layout: list # list, grid
-alt_title: "Tool Information Standard"
-sub_title: "An information standard for bioinformatics tools"
+alt_title: "Tool Information Standards"
+sub_title: "Information standard for bioinformatics tools"
 image: # splash image goes here /assets/images/...
 introduction: |
   An **information standard** for software description that defines attributes that must be defined within a 5-tier scale of description completeness and quality.  It is based on [biotoolsSchema](https://github.com/bio-tools/biotoolsschema) and the [EDAM ontology](https://github.com/edamontology/edamontology). The standard is used by [bio.tools](https://bio.tools) - the ELIXIR Tools and Data Services Registry.
@@ -16,7 +16,7 @@ introduction: |
 actions:
   - label: "Read More"
     icon: arrow-right
-    url: "https://bio-tools.github.io/Tool-Information-Standard/tool_information_standard.html"
+    url: "https://bio-tools.github.io/Tool-Information-Standards/tool_information_standard.html"
   - label: "Contribute"
     icon: github
     url: "https://github.com/bio-tools/Tool-Information-Standard"
