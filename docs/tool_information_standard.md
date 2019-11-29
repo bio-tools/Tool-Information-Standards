@@ -3,7 +3,7 @@ title: "Tool Information Standards"
 layout: about
 ---
 
-The **Tool Information Standards** comprise a stack of interrelated technologies and guidelines:
+The **Tool Information Standards** are a stack of interrelated technologies and guidelines:
 
 ![technology_stack]({{site.url}}/assets/images/technology_stack.png){: .align-center}
 
