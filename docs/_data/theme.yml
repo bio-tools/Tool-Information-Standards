@@ -35,6 +35,7 @@ google_fonts:
 
 navigation_pages:
   - tool_information_standard.md
+  - tool_attributes.md
   - use_cases.md
   - about.md
   - thanks.md

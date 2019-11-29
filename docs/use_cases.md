@@ -7,6 +7,12 @@ layout: about
 
 [bio.tools](https://bio.tools) uses internally a tool profile that lists software attributes (from biotoolsSchema) that must be specified within a 5-tier scale of description completeness and quality. It provides practical **metrics** to assess the descriptions of individual tools, and the curation of the corpus as a wholle. 
 
+The Tool Information Standard is five lists of tool attributes (see Table below) that must be specified for a software description (*e.g.* a bio.tools entry) to be assigned in a 5 tier ratings of *description completeness*.  Some attributes are grouped (see tables on right) for purposes of determining adherence to the standard. For example "Documentation" is satisfied if at least one of "General" documentation", "API documentation" or "API specification" is specified.
+
+
+![infographic_attributes]({{site.url}}/assets/images/infographic_attributes.png){: .align-center}
+
+
 The corpus of [bio.tools](https://bio.tools) content is being improved progressively according to tiers in the standard, the aim in the first instance being to bring all entries up to at least "DETAILED" standard.
 
 The "SPARSE" tier (name, description, homepage, unique ID) defines the minimum information requirement for new bio.tools entries.  It is [under discussion](https://github.com/bio-tools/biotoolsRegistry/issues/338) to allow a user to filter entries according to tiers in the standard.
