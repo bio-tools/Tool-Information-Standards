@@ -14,11 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-GB
-title: Tool Information Standard
-email: jison@bioinformatics.dtu.dk
-description: "An **information standard** for the desription of bioinformatics software tools."
+title: Tool Information Standards
+email: jon.c.ison@gmail.com
+description: "**Information standards** for the desription of bioinformatics software tools."
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: https://bio-tools.github.io/Tool-Information-Standard
+url: https://bio-tools.github.io/Tool-Information-Standards
 author:
   name: Jon Ison
   twitter:
