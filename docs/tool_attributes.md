@@ -3,6 +3,15 @@ title: "Tool attributes"
 layout: about
 ---
 
+Every tool attribute that may be defined using [biotoolsSchema](https://github.com/bio-tools/biotoolsschema) is given below, organised into different tables for convenience. THe meaning of the columns:
+
+* **Attribute** - short attribute name.
+* **Description** - concise human-readable attribute description
+* **Format** - attribute data type as defined in biotoolsSchema
+* **biotoolsSchema** - link to description of biotoolsSchema element corresponding to the attribute
+* **toolInfoProfileSchema** - attribute name used in [toolInfoProfileSchema]()
+* **Guideline** - link to the [Curators Guide](https://biotools.readthedocs.io/en/latest/curators_guide.html) giving guidelines on how to curate the attribute in [bio.tools](https://bio.tools)
+
 # General attributes
 
 
