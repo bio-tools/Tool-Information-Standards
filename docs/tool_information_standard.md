@@ -3,7 +3,7 @@ title: "Tool Information Standards"
 layout: about
 ---
 
-The **Tool Information Standards** are a stack of interrelated technologies and guidelines:
+The **Tool Information Standards** are a stack of interrelated open, community-defined technologies and guidelines:
 
 ![technology_stack]({{site.url}}/assets/images/technology_stack.png){: .align-center}
 
@@ -14,4 +14,4 @@ The **Tool Information Standards** are a stack of interrelated technologies and 
 - [Software Best Practice](https://elixir-europe.org/about-us/commissioned-services/software-best-practices) can be abstracted from the Curation Guidelines, for example, **general recommendations** for the description / documentation of software in contexts other than bio.tools.
 
 
-
+The standards are developed by and for the European Life Science community fostered with support from [ELIXIR](https://elixir-europe.org/).
