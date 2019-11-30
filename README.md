@@ -1,4 +1,4 @@
-# Tool Information Standard
+# Tool Information Standarda
 
 An information standard for software description that defines attributes that must be specified within a 5-tier scale of description completeness and quality. It is based on [biotoolsSchema](https://github.com/bio-tools/biotoolsSchema) and the [EDAM ontology](https://github.com/edamontology/edamontology). The standard used by [bio.tools](https://bio.tools) - the Tools and Data Services Registry of the [ELIXIR](https://www.elixir-europe.org) Research Infrastructure.
 
