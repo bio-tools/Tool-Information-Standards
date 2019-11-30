@@ -10,6 +10,6 @@ You can read about the standard [here](https://bio-tools.github.io/Tool-Informat
 
 File | Description
 ---- | -----------
-docs | Documentation formatted for [GitHub pages](https://bio-tools.github.io/Tool-Information-Standard/).
+docs | Documentation formatted for [GitHub pages](https://bio-tools.github.io/Tool-Information-Standards/).
 
 
