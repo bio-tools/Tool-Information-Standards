@@ -8,8 +8,8 @@ image: # /assets/images/technology_stack.png
 introduction: |
   A stack of community-defined, open and integrated technologies, technical standards and guidelines:
 
-   ![technology_stack]({{site.url}}/assets/images/technology_stack.png){: .align-center}
-
+  ![technology_stack]({{site.url}}/assets/images/technology_stack.png){: .align-center}
+  
   - Comprehensive list of scientific, technical and administrative **software attributes** to support cataloguing, discovery, use and interoperability of software
   - Precise tool descriptions in terms of their operations, types of input and output data, data formats and common topics, using the [EDAM ontology](https://github.com/edamontology/edamontology)
   - A practical description model for bioinformatics software - biotoolsSchema - which reduces the complexity of bioinformatics software into collections of readily understandable functional units.
