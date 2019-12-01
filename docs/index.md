@@ -3,15 +3,21 @@ layout: posts
 paginate: true
 entries_layout: list # list, grid
 alt_title: "Tool Information Standards"
-sub_title: "Information standard for bioinformatics tools"
+sub_title: "Information standards for bioinformatics tools"
 image: # splash image goes here /assets/images/...
 introduction: |
-  An **information standard** for software description that defines attributes that must be defined within a 5-tier scale of description completeness and quality.  It is based on [biotoolsSchema](https://github.com/bio-tools/biotoolsschema) and the [EDAM ontology](https://github.com/edamontology/edamontology). The standard is used by [bio.tools](https://bio.tools) - the ELIXIR Tools and Data Services Registry.
+  A stack of community-defined, open and integrated technologies, technical standards and guidelines:
 
+  ![technology_stack]({{site.url}}/assets/images/technology_stack.png){: .align-center}
+
+  - Comprehensive list of scientific, technical and administrative **software attributes** to support cataloguing, discovery, use and interoperability of software
+  - Precise tool descriptions in terms of their operations, types of input and output data, data formats and common topics, using the [EDAM ontology](https://github.com/edamontology/edamontology)
+  - A practical description model for bioinformatics software - biotoolsSchema - which reduces the complexity of bioinformatics software into collections of readily understandable functional units.
+  - Controlled vocabularies for consistent descriptions of technical software aspects such as programming language and license.
+  - Define which software attributes that can, should or must be specified for different types of tools within a set of tool descriptions, using tool information profiles. 
   - [Broadly applicable to diverse types of tool](#tooltypes) including application software, workflows and APIs. 
-  - Uses software attributes defined in [biotoolsSchema](https://github.com/bio-tools/biotoolsschema).
-  - Makes heavy use of controlled vocabularies including the [EDAM ontology](https://github.com/edamontology/edamontology) for types of data, data formats, operations and common topics.
-  - It is an [open community-driven project](#community).
+  - User-friendly guidelines on how attribute should be specified when describing software.
+  - Built by an [open community](#community).
 
 actions:
   - label: "Read More"
