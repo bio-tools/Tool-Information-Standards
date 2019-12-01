@@ -4,7 +4,7 @@ paginate: true
 entries_layout: list # list, grid
 alt_title: "Tool Information Standards"
 sub_title: "Information standards for bioinformatics tools"
-image: /assets/images/technology_stack.png){: .align-center}
+image: # /assets/images/technology_stack.png
 introduction: |
   A stack of community-defined, open and integrated technologies, technical standards and guidelines:
 
