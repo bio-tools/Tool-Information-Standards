@@ -18,6 +18,6 @@ The **Tool Information Standards** are a stack of community-defined, open and in
 The standards support the broader *bio.tools* initative - fostered with support from ELIXIR - which aspires to provide comprehensive and consistent information for all European bioinformatics resources:
 
 * *Community curation of bioinformatics software and data resources* (2019), Briefings in Bioinformatics, [doi:10.1093/bib/bbz075](https://doi.org/10.1093/bib/bbz075)
-* *The bio.tools registry of software tools and data resources for the life sciences* (2019), Genome Biology, [doi:https://doi.org/10.1093/bioinformatics/btt113.](https://doi.org/10.1093/bioinformatics/btt113)
+* *The bio.tools registry of software tools and data resources for the life sciences* (2019), Genome Biology, [doi:10.1093/bioinformatics/btt113.](https://doi.org/10.1093/bioinformatics/btt113)
 * *Tools and data services registry: a community effort to document bioinformatics resources* (2016), Nucleic Acids Research [doi:10.1093/nar/gkv1116](https://doi.org/10.1093/nar/gkv1116)
 
