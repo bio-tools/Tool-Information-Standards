@@ -3,7 +3,7 @@ title: "Tool Information Standards"
 layout: about
 ---
 
-The **Tool Information Standards** are a stack of integrated community-defined open technologies and guidelines:
+The **Tool Information Standards** are a stack of community-defined, open and integrated technologies, technical standards and guidelines:
 
 ![technology_stack]({{site.url}}/assets/images/technology_stack.png){: .align-center}
 
