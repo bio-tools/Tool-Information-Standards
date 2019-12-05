@@ -1,0 +1,926 @@
+{
+	"attributes": [
+		{
+		"name": "Name",
+		"id": "name",
+		"description": "Canonical software name assigned by the software developer or service provider.",
+	    "type": "Text",
+	    "xspattern": ["[\p{Zs}A-Za-z0-9+\.,\-_:;()]*"],
+		"btschema": "<summary><name>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1D",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool"
+	},
+	{
+		"name": "Description",
+		"id": "description",
+		"description": "Short and concise textual description of the software function.",
+		"type": "Text",
+		"btschema": "<summary><description>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1E",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#description"
+	},
+	{
+		"name": "Homepage",
+		"id": "homepage",
+		"description": "Homepage of the software, or some URL that best serves this purpose.",
+	    "type": "URL",
+	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<summary><homepage>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1F",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#homepage"
+	},
+	{
+		"name": "bio.tools ID",
+		"id": "biotoolsID",
+		"description": "Unique ID (case insensitive) of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name.",
+	    "type": "biotoolsID",
+	    "xspattern": ["[_\-.0-9a-zA-Z]*"],
+		"btschema": "<summary><biotoolsID>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link20",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#summary-biotoolsid"
+	},
+	{
+		"name": "bio.tools CURIE",
+		"id": "biotoolsCURIE",
+		"description": "bio.tools CURIE (compact URI) based on the bio.tools tool ID.",
+		"type": "Text",
+	    "xspattern": ["biotools:[_\-.0-9a-zA-Z]*"],
+	    "btschema": "<summary><biotoolsCURIE>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link21",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#summary-biotoolscurie"
+	},
+	{
+		"name": "version",
+		"id": "version",
+		"description": "Version information (typically a version number) of the software.",
+	    "type": "Text",
+	    "xspattern": ["[\p{Zs}A-Za-z0-9+\.,\-_:;()]*"],
+		"btschema": "<summary><version>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link22",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#version-tool"
+	},
+	{
+		"name": "otherID",
+		"id": "otherID",
+		"description": "A unique identifier of the software, typically assigned by an ID-assignment authority other than bio.tools.",
+	    "type": "Text",
+	    "xspattern": ["10\.[0-9]{4,9}/[\[\]&lt;&gt;A-Za-z0-9:;\)\(_/.-]+", "(rrid|RRID):.+", "(cpe|CPE):.+", "(BIOTOOLS|biotools):[_\-.0-9a-zA-Z]*"],
+	 		"btschema": "<summary><otherID>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link23",
+		"guideline ": "http://biotools.readthedocs.io/en/latest/curators_guide.html#other-ids"
+	},
+	{
+		"name": "Tool type",
+		"id": "toolType",
+		"description": "The type of application software: a discrete software entity can have more than one type.",
+	    "type": "enum",
+	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type",
+		"btschema": "<summary><toolType>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link39",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type"
+	},
+	{
+		"name": "Scientific topics",
+		"id": "topic",
+		"description": "General scientific domain the software serves or other general category, *e.g.* 'Proteomics'.",
+	    "type": "EDAM Topic URI",
+	    "xspattern": ["http://edamontology\.org/topic_[0-9]{4}"],
+	    "typelink": "http://edamontology.org/topic_0004",
+		"btschema": "<summary><topic>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link3A",
+		"guideline ": "http://biotools.readthedocs.io/en/latest/curators_guide.html#topic"
+	},
+	{
+		"name": "Scientific operations",
+		"id": "operation",
+		"description": "The basic operation(s) performed by the software, *e.g.* 'Multiple sequence alignment'.",
+	    "type": "EDAM Operation URI",
+	    "typelink": "http://edamontology.org/operation_0004",
+	    "xspattern": ["http://edamontology\.org/operation_[0-9]{4}"], 
+		"btschema": "<function><operation>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link27",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#operation"
+	},
+	{
+		"name": "Type of input data",
+		"id": "inputData",
+		"description": "Type of primary input data (if any), *e.g.* 'Protein sequences'.",
+	    "type": "EDAM Data URI",
+	    "xspattern": ["http://edamontology\.org/data_[0-9]{4}"],
+	    "typelink": "http://edamontology.org/data_0006",
+		"btschema": "<function><input><data>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link18",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data"
+	},
+	{
+		"name": "Type of output data",
+		"id": "outputData",
+		"description": "Type of primary output data (if any), *e.g.* 'Sequence alignment'.",
+	    "type": "EDAM Data URI",
+	    	    "xspattern": ["http://edamontology\.org/data_[0-9]{4}"],
+	    "typelink": "http://edamontology.org/data_0006",
+	    "btschema": "<function><output><data>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link18",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#data-type-input-and-output-data"
+	},
+	{
+		"name": "Supported input data formats",
+		"id": "inputFormat",
+		"description": "Allowed format(s) of primary inputs, *e.g.* 'FASTA'.",
+	    "type": "EDAM Format URI",
+	    "xspattern": ["http://edamontology\.org/format_[0-9]{4}"],
+	    "typelink": "http://edamontology.org/format_1915",
+		"btschema": "<function><input><format>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link18",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data"
+	},
+	{
+		"name": "Supported output data formats",
+		"id": "outputFormat",
+		"description": "Allowed format(s) of primary outputs, *e.g.* 'Clustal'.",
+	    "type": "EDAM Format URI",
+	    	    "xspattern": ["http://edamontology\.org/format_[0-9]{4}"],
+	    "typelink": "http://edamontology.org/format_1915",
+		"btschema": "<function><output><format>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link18",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#data-format-input-and-output-data"
+	},
+	{
+		"name": "Function note",
+		"id": "functionNote",
+		"description": "Concise comment about a tool function, if not apparent from the software description and EDAM annotations.",
+		"type": "Text",
+		"btschema": "<function><note>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link2A",
+		"guideline ": "http://biotools.readthedocs.io/en/latest/curators_guide.html#note-function"
+	},
+	{
+		"name": "Function command",
+		"id": "functionCmd",
+		"description": "Relevant command, command-line fragment or option for executing this function / running the tool in this mode.",
+		"type": "Text",
+		"btschema": "<function><note>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link2B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#command"
+	},
+	{
+		"name": "Operating system",
+		"id": "operatingSystem",
+		"description": "The operating system supported by a downloadable software package.",
+	    "type": "enum",
+	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#operating-system",
+		"btschema": "<labels><operatingSystem>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link3B",
+		"guideline ": "http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system"
+	},
+	{
+		"name": "Language",
+		"id": "language",
+		"description": "Name of programming language the software source code was written in, *e.g.* 'C'.",
+	    "type": "enum",
+	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#programming-language",
+		"btschema": "<labels><language>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link3C",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language"
+	},
+	{
+		"name": "License",
+		"id": "license",
+		"description": "Software or data usage license.",
+	    "type": "enum",
+	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#license",
+		"btschema": "<labels><license>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link3D",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#license"
+	},
+	{
+		"name": "Collection",
+		"id": "collectionID",
+		"description": "Tag for a collection that the software has been assigned to within bio.tools.",
+	    "type": "Text",
+	    	    "xspattern": ["[\p{Zs}A-Za-z0-9+\.,\-_:;()]*"],
+		"btschema": "<labels><collectionID>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link3E",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#collection"
+	},
+	{
+		"name": "Maturity",
+		"id": "maturity",
+		"description": "How mature the software product is.",
+	    "type": "enum",
+	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity",
+		"btschema": "<labels><maturity>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link3F",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#maturity"
+	},
+	{
+		"name": "Cost",
+		"id": "cost",
+		"description": "Monetary cost of acquiring the software.",
+	    "type": "enum",
+	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost",
+		"btschema": "<labels><cost>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link40",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#cost"
+	},
+	{
+		"name": "Accessibility",
+		"id": "accessibility",
+		"description": "Whether an online service is freely available for use.",
+	    "type": "enum",
+	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#accessibility",
+		"btschema": "<labels><accessibility>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link41",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility"
+	},
+	{
+		"name": "Discussion forum",
+		"id": "discussionForum",
+		"description": "Online forum for user discussions about the software.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<link><type>Discussion forum</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1A",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group"
+	},
+	{
+		"name": "Helpdesk",
+		"id": "helpdesk",
+		"description": "Helpdesk providing support in using the software.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<link><type>Helpdesk</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1A",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group"
+	},
+	{
+		"name": "Issue tracker",
+		"id": "issueTracker",
+		"description": "Link to tracker for software issues, bug reports, feature requests etc.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<link><type>Issue tracker</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1A",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group"
+	},
+	{
+		"name": "Mailing list",
+		"id": "mailingList",
+		"description": "Link to mailing list for software announcements, discussions, support etc.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<link><type>Mailing list</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1A",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group"
+	},
+	{
+		"name": "Mirror",
+		"id": "mirror",
+		"description": "Mirror of an (identical) online service.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<link><type>Mirror</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1A",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group"
+	},
+	{
+		"name": "Software catalogue",
+		"id": "softwareCatalogue",
+		"description": "Some registry, catalogue etc. other than bio.tools where the tool is also described.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<link><type>Software catalogue</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1A",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group"
+	},
+	{
+		"name": "Repository",
+		"id": "repository",
+		"description": "A place where source code, data and other files can be retrieved from, typically via platforms like GitHub which provide version control and other features, or something simpler, e.g. an FTP site.",
+	    "type": "URL",
+	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<link><type>Repository</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1A",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group"
+	},
+	{
+		"name": "Social media*",
+		"id": "socialMedia",
+		"type": "A website used by the software community including social networking sites, discussion and support fora, WIKIs etc.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<link><type>Social media</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1A",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group"
+	},
+	{
+		"name": "Service*",
+		"id": "service",
+		"type": "An online service (other than Galaxy) that provides access (an interface) to the software.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<link><type>Service</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1A",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group"
+	},
+	{
+		"name": "Galaxy service",
+		"id": "galaxyService",
+		"description": "An online service providing the tool through the Galaxy platform.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<link><type>Galaxy service</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1A",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group"
+	},
+	{
+		"name": "Technical monitoring",
+		"id": "technicalMonitoring",
+		"description": "Information about the technical status of a tool.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<link><type>Technical monitoring</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1A",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group"
+	},
+	{
+		"name": "Misc link",
+		"id": "linkOther",
+		"description": "Other type of link for software - the default if a more specific type is not available.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<link><type>Other</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1A",
+		"guideline ": "http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group"
+	},
+	{
+		"name": "API specification",
+		"id": "apiSpecification",
+		"description": "File providing an API specification for the software, e.g. Swagger/OpenAPI, WSDL or RAML file.",
+	    "type": "URL",
+	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>API specification</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
+	},
+	{
+		"name": "Biological data",
+		"id": "biologicalData",
+		"description": "Biological data, or a web page on a database portal where such data may be downloaded.",
+	    "type": "URL",
+	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Biological data</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline ": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
+	},
+	{
+		"name": "Binaries",
+		"id": "binaries",
+		"description": "Binaries for the software.",
+	    "type": "URL",
+	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Binaries</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
+	},
+	{
+		"name": "Command-line specification",
+		"id": "commandlineSpecification",
+		"description": "File providing a command line specification for the software.",
+	    "type": "URL",
+	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Command-line specification</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
+	},
+	{
+		"name": "Container file",
+		"id": "containerFile",
+		"description": "Container file including the software.",
+	    "type": "URL",
+	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Container file</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
+	},
+	{
+		"name": "Icon",
+		"id": "icon",
+		"description": "Icon of the software.",
+	    "type": "URL",
+	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Icon</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
+	},
+	{
+		"name": "Screenshot",
+		"id": "screenshot",
+		"description": "Screenshot of the software.",
+	    "type": "URL",
+	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Screenshot</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
+	},
+	{
+		"name": "Source code",
+		"id": "sourceCode",
+		"description": "Software source code.",
+	    "type": "URL",
+	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Source code</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "Software package",
+		"id": "softwarePackage",
+		"description": "A software package; a bundle of files and information about those files, typically including source code and / or binaries.",
+	    "type": "URL",
+	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Software package</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "Test data",
+		"id": "testData",
+		"description": "Data for testing the software is working correctly.",
+	    "type": "URL",
+	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Test data</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "Test script",
+		"id": "testScript",
+		"description": "Script used for testing testing whether the software is working correctly.",
+		"type": "URL",
+	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+	    "btschema": "<download><type>Test data</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "Tool wrapper (CWL",
+		"id": "toolWrapperCWL",
+		"description": "Tool wrapper in Common Workflow Language (CWL) format for the software.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Tool wrapper (CWL)</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
+	},
+	{
+		"name": "Tool wrapper (galaxy",
+		"id": "toolWrapperGalaxy",
+		"description": "Galaxy tool configuration file (wrapper) for the software.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Tool wrapper (galaxy)</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
+	},
+	{
+		"name": "Tool wrapper (taverna",
+		"id": "toolWrapperTaverna",
+		"description": "Taverna configuration file for the software.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Tool wrapper (taverna)</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline ": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
+	},
+	{
+		"name": "Tool wrapper (other",
+		"id": "toolWrapperOther",
+		"description": "Workbench configuration file (other than taverna, galaxy or CWL wrapper) for the software.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Tool wrapper (other)</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
+	},
+	{
+		"name": "VM image",
+		"id": "vmImage",
+		"description": "Virtual machine (VM) image for the software.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>VM image</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
+	},
+	{
+		"name": "Downloads page",
+		"id": "downloadsPage",
+		"description": "Web page summarising general downloads available for the software.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Downloads page</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
+	},
+	{
+		"name": "Misc download",
+		"id": "downloadsOther",
+		"description": "Other type of download for software - the default if a more specific type is not available.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*", "s?ftp://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<download><type>Other</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1B",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
+	},
+	{
+		"name": "API documentation",
+		"id": "apiDocumentation",
+		"description": "Human-readable API documentation.",
+	    "type": "URL",	    
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<documentation><type>API documentation</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1C",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "Citation instructions",
+		"id": "citationInstructions",
+		"description": "Human-readable API documentation.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<documentation><type>Citation instructions</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1C",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "Command-line options",
+		"id": "commandlineOptions",
+		"description": "Information about the command-line interface to a tool.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<documentation><type>Command-line options</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1C",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "Contributions policy",
+		"id": "contributionsPolicy",
+		"description": "Information about policy for making contributions to the software project.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<documentation><type>Contributions policy</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1C",
+		"guideline ": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "General documentation",
+		"id": "generalDocumentation",
+		"description": "General documentation.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<documentation><type>General</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1C",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "FAQ",
+		"id": "faq",
+		"description": "Frequently Asked Questions (and answers) about the software.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<documentation><type>FAQ</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1C",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "Governance",
+		"id": "governance",
+		"description": "Information about the software governance model.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<documentation><type>Governance</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1C",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "Installation instructions",
+		"id": "installationInstructions",
+		"description": "Instructions how to install the software.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<documentation><type>Installation instructions</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1C",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "User manual",
+		"id": "userManual",
+		"description": "Information on how to use the software, tailored to the end-user.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<documentation><type>User manual</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1C",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "Release notes",
+		"id": "releaseNotes",
+		"description": "Notes about a software release or changes to the software; a change log.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<documentation><type>Release notes</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1C",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "Terms of use",
+		"id": "termsOfUse",
+		"description": "Rules that one must agree to abide by in order to use a service.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<documentation><type>Terms of use</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1C",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "Training material",
+		"id": "trainingMaterial",
+		"description": "Online training material such as text on a Web page, a presentation, video, tutorial etc.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<documentation><type>Training material</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1C",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "Misc. documentation",
+		"id": "documentationOther",
+		"description": "Some other type of documentation not listed in btschema.",
+	    "type": "URL",
+	    	    "xspattern": ["http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<documentation><type>Other</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1C",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},
+	{
+		"name": "Primary publication",
+		"id": "publicationPrimary",
+		"description": "The principal publication about the tool itself; the article to cite when acknowledging use of the tool.",
+	    "type": "DOI, PMID or PMCID",
+	    "xspattern": ["10\.[0-9]{4,9}/[\[\]&lt;&gt;A-Za-z0-9:;\)\(_/.-]+", "(PMC)[1-9][0-9]{0,8}", "[1-9][0-9]{0,8}"],
+		"btschema": "<publication><type>Primary</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link16",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-group"
+	},
+	{
+		"name": "Method publication",
+		"id": "publicationMethod",
+		"description": "A publication describing a scientific method or algorithm implemented by the tool.",
+	    "type": "DOI, PMID or PMCID",
+	    	    "xspattern": ["10\.[0-9]{4,9}/[\[\]&lt;&gt;A-Za-z0-9:;\)\(_/.-]+", "(PMC)[1-9][0-9]{0,8}", "[1-9][0-9]{0,8}"],
+		"btschema": "<publication><type>Method</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link16",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-group"
+	},
+	{
+		"name": "Usage publication",
+		"id": "publicationUsage",
+		"description": "A publication describing the application of the tool to scientific research, a particular task or dataset.",
+	    "type": "DOI, PMID or PMCID",
+	    	    "xspattern": ["10\.[0-9]{4,9}/[\[\]&lt;&gt;A-Za-z0-9:;\)\(_/.-]+", "(PMC)[1-9][0-9]{0,8}", "[1-9][0-9]{0,8}"],
+		"btschema": "<publication><type>Usage</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link16",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-group"
+	},
+	{
+		"name": "Benchmarking study publication",
+		"id": "publicationBenchmarkingStudy",
+		"description": "A publication which assessed the performance of the tool.",
+	    "type": "DOI, PMID or PMCID",
+	    	    "xspattern": ["10\.[0-9]{4,9}/[\[\]&lt;&gt;A-Za-z0-9:;\)\(_/.-]+", "(PMC)[1-9][0-9]{0,8}", "[1-9][0-9]{0,8}"],
+		"btschema": "<publication><type>Benchmarking study</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link16",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-group"
+	},
+	{
+		"name": "Review publication",
+		"id": "publicationReview",
+		"description": "A publication where the tool was reviewed.",
+	    "type": "DOI, PMID or PMCID",
+	    	    "xspattern": ["10\.[0-9]{4,9}/[\[\]&lt;&gt;A-Za-z0-9:;\)\(_/.-]+", "(PMC)[1-9][0-9]{0,8}", "[1-9][0-9]{0,8}"],
+		"btschema": "<publication><type>Review</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link16",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#publication-group"
+	},
+	{
+		"name": "isNewVersionOf",
+		"id": "relationIsNewVersionOf",
+		"description": "The software is a new version of an existing software, typically providing new or improved functionality.",
+	    "type": "biotoolsID",
+	    "xspattern": ["(BIOTOOLS|biotools):[_\-.0-9a-zA-Z]*"],
+		"btschema": "<relation><type>isNewVersionOf</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group"
+	},
+	{
+		"name": "hasNewVersion",
+		"id": "relationHasNewVersion",
+		"description": "(inverse of above",
+	    "type": "biotoolsID",
+	    	    "xspattern": ["(BIOTOOLS|biotools):[_\-.0-9a-zA-Z]*"],
+		"btschema": "<relation><type>hasNewVersion</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#",
+		"guideline ": "http://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group"
+	},
+	{
+		"name": "uses",
+		"id": "relationUses",
+		"description": "The software provides an interface to or in some other way uses the functions of other software under the hood, e.g. invoking a command-line tool or calling a Web API, Web service or SPARQL endpoint to perform its function.",
+	    "type": "biotoolsID",
+	    	    "xspattern": ["(BIOTOOLS|biotools):[_\-.0-9a-zA-Z]*"],
+		"btschema": "<relation><type>uses</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group"
+	},
+	{
+		"name": "usedBy",
+		"id": "relationUsedBy",
+		"description": "(inverse of above",
+	    "type": "biotoolsID",
+	    	    "xspattern": ["(BIOTOOLS|biotools):[_\-.0-9a-zA-Z]*"],
+		"btschema": "<relation><type>usedBy</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#",
+		"guideline ": "http://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group"
+	},
+	{
+		"name": "includes",
+		"id": "relationIncludes",
+		"description": "A workbench, toolkit or workflow includes some other, independently available, software.",
+	    "type": "biotoolsID",
+	    	    "xspattern": ["(BIOTOOLS|biotools):[_\-.0-9a-zA-Z]*"],
+		"btschema": "<relation><type>includes</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group"
+	},
+	{
+		"name": "includedIn",
+		"id": "relationIncludedIn",
+		"description": "(inverse of above",
+	    "type": "biotoolsID",
+	    	    "xspattern": ["(BIOTOOLS|biotools):[_\-.0-9a-zA-Z]*"],
+		"btschema": "<relation><type>includedIn</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#relation-group"
+	},
+	{
+		"name": "Primary contact",
+		"id": "creditprimaryContact",
+		"description": "The primary point of contact for the software.",
+	    "type": "Name, email, URL and/or ORCID iD",
+	    "xspattern": ["http://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]", "https://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]", "[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*"],
+		"btschema": "<credit><typeRole>Primary</typeRole>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
+	},
+	{
+		"name": "Person credit",
+		"id": "creditPerson",
+		"description": "Credit of an individual.",
+	    "type": "Name, email, URL and/or ORCID iD",
+	    "xspattern": ["[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*", "http(s?)://[^\s/$.?#]*\.[^\s]*", "http://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]", "https://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]"],
+		"btschema": "<credit><typeRole>Person</typeRole>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
+	},
+	{
+		"name": "Project credit",
+		"id": "creditProject",
+		"description": "Credit of a community software project not formally associated with any single institute.",
+	    "type": "Name, email and/or URL",
+	    "xspattern": ["[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*", "http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<credit><typeRole>Project</typeRole>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
+	},
+	{
+		"name": "Division credit",
+		"id": "creditDivision",
+		"description": "Credit of or a formal part of an institutional organisation, e.g. a department, research group, team, etc.",
+	    "type": "Name, email, URL and/or GRID ID",
+	    "xspattern": ["[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*", "http(s?)://[^\s/$.?#]*\.[^\s]*", "grid.[0-9]{4,}.[a-f0-9]{1,2}"],
+		"btschema": "<credit><typeRole>Division</typeRole>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
+	},
+	{
+		"name": "Institute credit",
+		"id": "creditInstitute",
+		"description": "Credit of an organisation such as a university, hospital, research institute, service center, unit etc.",
+	    "type": "Name, email, URL and/or GRID ID",
+	    "xspattern": ["[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*", "http(s?)://[^\s/$.?#]*\.[^\s]*", "grid.[0-9]{4,}.[a-f0-9]{1,2}"],
+		"btschema": "<credit><typeRole>Institute</typeRole>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
+	},
+	{
+		"name": "Consortium credit",
+		"id": "creditConsortium",
+		"description": "Credit of an association of two or more institutes or other legal entities which have joined forces for some common purpose. Includes Research Infrastructures (RIs) such as ELIXIR, parts of an RI such as an ELIXIR node etc.",
+	    "type": "Name, email, URL and/or GRID ID",
+	    "xspattern": ["[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*", "http(s?)://[^\s/$.?#]*\.[^\s]*", "grid.[0-9]{4,}.[a-f0-9]{1,2}"],
+		"btschema": "<credit><typeRole>Consortium</typeRole>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
+	},
+	{
+		"name": "Funding agency credit",
+		"id": "creditFundingAgency",
+		"description": "Credit of a legal entity providing funding for development of the software or provision of an online service.",
+	    "type": "Name, email and/or URL",
+	    "xspattern": ["[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*", "http(s?)://[^\s/$.?#]*\.[^\s]*"],
+		"btschema": "<credit><typeRole>Funding agency</typeRole>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
+	},
+	{
+		"name": "Developer credit",
+		"id": "creditDeveloper",
+		"description": "Author of the original software source code.",
+	    "type": "Name, email, URL and/or ORCID iD",
+	    	    "xspattern": ["[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*", "http(s?)://[^\s/$.?#]*\.[^\s]*", "http://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]", "https://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]"],
+		"btschema": "<credit><typeRole>Developer</typeRole>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
+	},
+	{
+		"name": "Maintainer credit",
+		"id": "creditMaintainer",
+		"description": "Maintainer of a mature software providing packaging, patching, distribution etc.",
+	    "type": "Name, email, URL and/or ORCID iD",
+	    	    "xspattern": ["[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*", "http(s?)://[^\s/$.?#]*\.[^\s]*", "http://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]", "https://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]"],
+		"btschema": "<credit><typeRole>Maintainer</typeRole>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
+	},
+	{
+		"name": "Provider credit",
+		"id": "creditProvider",
+		"description": "Institutional provider of an online service.",
+	    "type": "Name, email, URL and/or ORCID iD",
+	    	    "xspattern": ["[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*", "http(s?)://[^\s/$.?#]*\.[^\s]*", "http://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]", "https://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]"],
+		"btschema": "<credit><typeRole>Provider</typeRole>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
+	},
+	{
+		"name": "Documentor credit",
+		"id": "creditDocumentor",
+		"description": "Author of software documentation including making edits to a bio.tools entry.",
+	    "type": "Name, email, URL and/or ORCID iD",
+	    	    "xspattern": ["[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*", "http(s?)://[^\s/$.?#]*\.[^\s]*", "http://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]", "https://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]"],
+		"btschema": "<credit><typeRole>Documentor</typeRole>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
+	},
+	{
+		"name": "Contributor credit",
+		"id": "creditContributor",
+		"description": "Some other role in software production or service delivery including design, deployment, system administration, evaluation, testing, documentation, training, user support etc.",
+	    "type": "Name, email, URL and/or ORCID iD",
+	    	    "xspattern": ["[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*", "http(s?)://[^\s/$.?#]*\.[^\s]*", "http://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]", "https://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]"],
+		"btschema": "<credit><typeRole>Contributor</typeRole>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
+	},
+	{
+		"name": "Support credit",
+		"id": "creditSupport",
+		"description": "Provider of support in using the software.",
+	    "type": "Name, email, URL and/or ORCID iD",
+	    	    "xspattern": ["[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*", "http(s?)://[^\s/$.?#]*\.[^\s]*", "http://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]", "https://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]"],
+		"btschema": "<credit><typeRole>Support</typeRole>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
+	},
+	{
+		"name": "ELIXIR Node",
+		"id": "elixirNode",
+		"description": "Name of the ELIXIR Node that is credited.",
+	    "type": "enum",
+	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#elixir-node",
+		"btschema": "<labels><elixirNode>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link43",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node"
+	},
+	{
+		"name": "ELIXIR Platform",
+		"id": "elixirPlatform",
+		"description": "Name of the ELIXIR Platform that is credited.",
+	    "type": "enum",
+	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#elixir-platform",
+		"btschema": "<labels><elixirPlatform>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link43",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-platform"
+	}]
+}
