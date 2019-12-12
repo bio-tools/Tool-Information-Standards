@@ -22,7 +22,7 @@ introduction: |
 actions:
   - label: "Read More"
     icon: arrow-right
-    url: "https://bio-tools.github.io/Tool-Information-Standards/tool_information_standard.html"
+    url: "https://bio-tools.github.io/Tool-Information-Standards/tool_information_standards.html"
   - label: "Contribute"
     icon: github
     url: "https://github.com/bio-tools/Tool-Information-Standard"
