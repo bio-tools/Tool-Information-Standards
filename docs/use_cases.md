@@ -16,6 +16,8 @@ The corpus of [bio.tools](https://bio.tools) content is being improved progressi
 
 The "SPARSE" tier (name, description, homepage, unique ID) defines the minimum information requirement for new bio.tools entries.  It is [under discussion](https://github.com/bio-tools/biotoolsRegistry/issues/338) to allow a user to filter entries according to tiers in the standard.
 
+And example for a the "COMPREHENSIVE" tier is [bio.tools/PeptideShaker](https://bio.tools/peptideshaker).
+
 The standard also provides a basis to monitor bio.tools content and label entries in various ways:
 
 * *entry completeness* ("SPARSE" through to "COMPREHENSIVE")
